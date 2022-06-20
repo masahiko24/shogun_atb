@@ -1,6 +1,6 @@
-<h2>Log in</h2>
-
+<div id="login-page" class="big-bg-log">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="login-main">
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
@@ -19,8 +19,10 @@
   <% end %>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= "Log in" %>
   </div>
 <% end %>
-
+</div>
+</div><!-- /#login-page -->
 <%= render "devise/shared/links" %>
+

@@ -4,9 +4,11 @@
         <h1><a href="/">Shougun</a></h1>
         <nav>
         <ul class="main-nav">
-        <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
-        <li><%= link_to 'ログイン', user_session_path, class: "login" %></li>
+        <li ><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+        <li ><%= link_to 'ログイン', user_session_path, class: "login" %></li>
+        <li ><%= link_to '投稿する', user_session_path, class: "login" %></li>
 
+        <%# <a class="button" href="#">投稿する</a> %>
         </ul>
         </nav>
     </header>
@@ -14,8 +16,7 @@
 <div class="home-content wrapper">
 <h2 class="page-title">shogun-authorized trading book
 </h2>
-<p>素敵な思い出を投稿してみませんか？</p>
-<a class="button" href="#">投稿する</a>
+<p>そうだ 御朱印集めに行こう</p>
   </div>
 
    <footer>
