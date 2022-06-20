@@ -1,6 +1,9 @@
 <div id="login-page" class="big-bg-log">
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+ <%= form_with model:@user , url:user_session_path , local: true do |f| %>
+
   <div class="login-main">
+
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>

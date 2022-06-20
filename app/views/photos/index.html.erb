@@ -3,13 +3,18 @@
   <header class="header wrapper">
         <h1><a href="/">Shougun</a></h1>
         <nav>
+         <% if user_signed_in? %>
         <ul class="main-nav">
+        <li ><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:"logout" %>
+        <li ><%= link_to '投稿する', new_photo_path, class: "postin" %></li>
+         </ul>
+         <% else %>
+        <ul class="sub-nav">
         <li ><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
-        <li ><%= link_to 'ログイン', user_session_path, class: "login" %></li>
-        <li ><%= link_to '投稿する', user_session_path, class: "login" %></li>
-
+        <li ><%= link_to 'ログイン', new_user_session_path, class: "sign-in" %></li>
         <%# <a class="button" href="#">投稿する</a> %>
         </ul>
+        <% end %>
         </nav>
     </header>
 
