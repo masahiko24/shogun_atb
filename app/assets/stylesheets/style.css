@@ -12,7 +12,7 @@ a {
 .big-bg {
   background-size: cover;
   background-position: center top;
-  opacity: 90%
+  opacity: 100%
 }
 
 .header {
@@ -24,7 +24,7 @@ a {
 
 #home {
   background-image: url(kyoto.jpeg);
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 #home .page-title {
