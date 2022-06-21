@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+h1 {
+  font-size: 180%;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  opacity: 90%
+}
+
+.header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#home {
+  background-image: url(kyoto.jpeg);
+  min-height: 100vh;
+}
+
+#home .page-title {
+  text-transform: none;
+}
+
+.main-nav {
+  display: flex;
+  margin-top: 8px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.main-nav li {
+  margin-left: 36px;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+
+.sub-nav {
+  margin-left: 36px;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.home-content {
+  height: 560px;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.home-content p {
+  font-size: 20px;
+  margin: 10px 0 42px;
+}
+
+.page-title {
+  font-size: 50px;
+  color: #fff;
+}
+
+/* .button {
+  font-size: 20px;
+  color: #505050;
+  border-radius: 5px;
+  padding: 18px 18px;
+  margin-left: 36px;
+} */
+
+.button:hover {
+  background-color: #0090aa;
+}
+
+footer {
+  text-align: center;
+  font-size: large;
+  background-color: rgb(249, 188, 230);
+
+}
+
+/* ログイン */
+
+.login-main {
+  position: relative;
+  height: 560px;
+  width: 405px;
+  margin: auto;
+  padding: 60px 60px;
+  background: url(新緑.webp) no-repeat   center center #505050;   
+  background-size: cover;
+  box-shadow: 0px 30px 60px -5px #000;
+  border-radius: 10px;
+
+}
+
+#login-page {
+  background-image: url(緑.webp);
+  min-height: 100vh;
+}
+
+.big-bg-log {
+  background-size: cover;
+  background-position: center top;
+  opacity: 100%
+}
+
+.actions {
+  background-color: #1161ed;
+  color: #FFF;
+  width: 100%;
+  padding: 10px 20px;
+  display: block;
+  text-align: center;
+  font-size: 200%;
+  height: 39px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+}
+
+.actions:hover {
+  background: #4082f5;
+  box-shadow: 0px 4px 35px -5px #4082f5;
+  cursor: pointer;
+}
+
+.actions:focus {
+  outline: none;
+}
+
+.field {
+  color: #fff;
+  font-size: 40px;
+
+}
