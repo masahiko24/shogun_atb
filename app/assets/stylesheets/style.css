@@ -2,7 +2,6 @@
 
 h1 {
   font-size: 180%;
-  
 }
 
 a {
@@ -12,23 +11,23 @@ a {
 .big-bg {
   background-size: cover;
   background-position: center top;
-  opacity: 90%
+  opacity: 100%
 }
 
 .header {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
-
 }
 
 #home {
   background-image: url(kyoto.jpeg);
-  min-height: 100vh;
+  min-height: 100%;
 }
 
-#home .page-title {
+#home.page-title {
   text-transform: none;
+
 }
 
 .main-nav {
@@ -47,10 +46,10 @@ a {
 }
 
 .sub-nav {
+  display: flex;
+  list-style: none;
   margin-left: 36px;
   font-size: 15px;
-  color: #fff;
-  border-radius: 5px;
   padding: 18px 32px;
 }
 
