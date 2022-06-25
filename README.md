@@ -8,7 +8,7 @@
 
 URL  
 ---
-
+https://shogunatb.herokuapp.com/
 
 テスト用アカウント  
 ---
@@ -38,16 +38,17 @@ https://docs.google.com/spreadsheets/d/1FK8oeyrRVcgyHEPr_Z045k9Lila6QUdsoR76Ko-h
  1. Google Mapと連携する  
  1. いいね機能の実装
 
-データベース設計	ER図を添付。  
+データベース設計  
+---
+[![Image from Gyazo](https://i.gyazo.com/789277290486a8b8e36c465871e3f8d7.png)](https://gyazo.com/789277290486a8b8e36c465871e3f8d7)
 
 画面遷移図  
+---
 [![Image from Gyazo](https://i.gyazo.com/44d18507479efffa001ffc0cb933e184.jpg)](https://gyazo.com/44d18507479efffa001ffc0cb933e184)
 
 開発環境  
 ---
 Ruby,Ruby on Rails,HTML,CSS
-
-ローカルでの動作方法※	git cloneしてから、ローカルで動作をさせるまでに必要なコマンドを記載。  
 
 工夫したポイント  
 ---
