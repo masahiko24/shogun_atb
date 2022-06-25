@@ -1,73 +1,88 @@
 @charset "UTF-8";
 
 h1 {
-  font-size: 180%;
+  font-size: 40px;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
 }
 
+.top {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 420px;
+  color: rgb(247, 6, 170);
+}
+
+.sign-up {
+  margin-right: 30px;
+  color:rgb(247, 6, 170);
+}
+
+.sign-in {
+  color:rgb(247, 6, 170);
+}
+
 .big-bg {
   background-size: cover;
-  background-position: center top;
+  /* background-position: center top; */
   opacity: 100%
 }
 
 .header {
-  background-color: #fff;
+  /* background-color: #fff; */
   display: flex;
   justify-content: space-between;
 }
 
 #home {
-  background-image: url(kyoto.jpeg);
-  min-height: 100%;
+  background-image: url(御朱印1.webp);
+  min-height: 120%;
 }
 
 #home.page-title {
   text-transform: none;
-
 }
 
-.main-nav {
+/* .main-nav {
   display: flex;
   margin-top: 8px;
   list-style: none;
   text-transform: uppercase;
-}
-
-.main-nav li {
   margin-left: 36px;
   font-size: 15px;
   color: #fff;
   border-radius: 5px;
   padding: 18px 32px;
-}
+} */
 
 .sub-nav {
   display: flex;
   list-style: none;
-  margin-left: 36px;
-  font-size: 15px;
-  padding: 18px 32px;
+  background-color:#fff;
+  font-size:20px;
+  /* padding: 10px 10px; */
+  font-weight: 600;
 }
 
-.wrapper {
+/* .wrapper {
   max-width: 100%;
-  margin: 0 auto;
-  padding: 0 4%;
-}
+  margin: 0 ;
+  padding: 0;
+} */
 
 .home-content {
-  height: 560px;
-  text-align: center;
-  margin-top: 10%;
+  height: 660px;
+  text-align: right;
+  /* margin-top: 5%; */
 }
 
 .home-content p {
   font-size: 20px;
-  margin: 10px 0 42px;
+  color: #fff;
+  /* margin: 10px 0 42px; */
 }
 
 .page-title {
@@ -91,7 +106,6 @@ footer {
   text-align: center;
   font-size: large;
   background-color: rgb(249, 188, 230);
-
 }
 
 /* ログイン */
@@ -99,14 +113,13 @@ footer {
 .login-main {
   position: relative;
   height: 560px;
-  width: 405px;
+  width: 410px;
   margin: auto;
   padding: 60px 60px;
   background: url(新緑.webp) no-repeat   center center #505050;   
   background-size: cover;
-  box-shadow: 0px 30px 60px -5px #000;
+  /* box-shadow: 0px 30px 60px -5px #000; */
   border-radius: 10px;
-
 }
 
 #login-page {
@@ -117,7 +130,7 @@ footer {
 .big-bg-log {
   background-size: cover;
   background-position: center top;
-  opacity: 100%
+  /* opacity: 100% */
 }
 
 .actions {

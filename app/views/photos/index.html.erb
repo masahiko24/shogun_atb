@@ -1,7 +1,6 @@
 
 <div id="home" class="big-bg">
-  <header class="header wrapper">
-        <h1><a href="/">Shougun</a></h1>
+  <header class="headewrapper">
         <nav>
          <% if user_signed_in? %>
         <ul class="main-nav">
@@ -12,19 +11,22 @@
         <ul class="sub-nav">
         <li ><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
         <li ><%= link_to 'ログイン', new_user_session_path, class: "sign-in" %></li>
+        <li ><%= link_to 'Shougun', root_path, class: "top" %></li>
+
         </ul>
         <% end %>
         </nav>
+
   </header>
 
 <div class="home-content wrapper">
-<h2 class="page-title">shogun-authorized trading book</h2>
+<h2 class="page-title">shogun-authorized<br>trading book</h2>
 <p>そうだ 御朱印集めに行こう</p>
 </div>
 
    <footer>
       <p>
-        Copyright Shougunatb 2022.
+        Copyright Masahiko.Arimura 2022.
       </p>
     </footer>
     </div><!-- /#home -->
