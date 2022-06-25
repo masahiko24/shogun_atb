@@ -12,8 +12,8 @@ https://shogunatb.herokuapp.com/
 
 テスト用アカウント  
 ---
-- メールアドレス：  
-- パスワード：  
+- メールアドレス：test@test  
+- パスワード：123456  
 - ID:admin  
 - Pass:2222  
 
