@@ -14,6 +14,6 @@ class PhotosController < ApplicationController
   private
 
   def photo_params
-    params.require(:photo).permit(:title, :image, :memo).merge(user_id: current_user.id)
+    params.require(:photo).permit(:nickname, :title, :image, :memo).merge(user_id: current_user.id)
   end
 end
