@@ -4,6 +4,7 @@
         <nav>
          <% if user_signed_in? %>
         <ul class="main-nav">
+        <li ><%= link_to "マイページ", "/users/#{current_user.id}" %>
         <li ><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:"logout" %>
         <li ><%= link_to '投稿する', new_photo_path, class: "postin" %></li>
          </ul>
