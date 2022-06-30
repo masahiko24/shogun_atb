@@ -1,12 +1,7 @@
 <div class="contents row">
+
   <p><%= @name %>さんの投稿一覧</p>
-        <%= image_tag @photo.image %>
-</div>
-  <% @photos.each do |photo| %>
-    <div class="content_post" style="background-image: url(<%= tweet.image %>);">
-      <p><%= photo.text %></p>
-      <span class="name"><%= photo.name %></span>
-    </div>
-  <% end %>
+   
+ 
   <%= link_to 'トップページに戻る', root_path %>
 </div>
