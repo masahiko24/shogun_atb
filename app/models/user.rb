@@ -6,8 +6,8 @@ class User < ApplicationRecord
 
   has_many :photos
 
-  validates :profile, presence: true
-  validates :profile, presence: true
-  validates :profile, presence: true
+  validates :name, presence: true
+  validates :email, presence: true
+  validates :password, presence: true
 
 end
