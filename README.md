@@ -1,7 +1,7 @@
 # README
 
 アプリケーション名
-# shogun-authorized trading book
+# shogun-authorized trading book 略：SATB
 
 アプリケーション概要  
 ## 誰でも簡単に画像が投稿できる  
@@ -49,7 +49,7 @@ https://docs.google.com/spreadsheets/d/1FK8oeyrRVcgyHEPr_Z045k9Lila6QUdsoR76Ko-h
 
 画面遷移図  
 ---
-[![Image from Gyazo](https://i.gyazo.com/44d18507479efffa001ffc0cb933e184.jpg)](https://gyazo.com/44d18507479efffa001ffc0cb933e184)
+[![Image from Gyazo](https://i.gyazo.com/b87c0c99de11bfe18721467ead3f2c92.png)](https://gyazo.com/b87c0c99de11bfe18721467ead3f2c92)
 
 開発環境  
 ---

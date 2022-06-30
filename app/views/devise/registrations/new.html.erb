@@ -1,6 +1,9 @@
 <h2>Sign up</h2>
+<div id="signup-page" class="big-bg-sign">
 
- <%= form_with model:@user , url:new_user_registration_path , local: true do |f| %>
+ <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
+
+  <div class="signup-main">
 
 
   <%= render "devise/shared/error_messages", resource: resource %>
@@ -31,6 +34,7 @@
     <%= f.submit "Sign up" %>
   </div>
 <% end %>
+</div>
 
-<%= render "devise/shared/links" %>
+<%# <%= render "devise/shared/links" %>
 
