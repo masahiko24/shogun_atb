@@ -1,7 +1,8 @@
 <div id="login-page" class="big-bg-log">
+<div class="login-top">
+ <%= form_with model: @user, url: user_session_path, local: true do |f| %>
 
- <%= form_with model:@user , url:root_path , local: true do |f| %>
-
+</div>
   <div class="login-main">
 
   <div class="field">
@@ -21,11 +22,14 @@
     </div>
   <% end %>
 
-  <div class="actions">
-    <%= "Log in" %>
-  </div>
+    <div class="actions">
+    <%= f.submit "Log in", class: :form__btn %>
+    </div>
 <% end %>
 </div>
 </div>
+
+    <%= render "devise/shared/footer", resource: resource %>
+
 <%# <%= render "devise/shared/links" %>
 
