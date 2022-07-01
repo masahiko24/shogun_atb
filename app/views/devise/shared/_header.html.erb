@@ -1,0 +1,22 @@
+<header class="headewrapper">
+        <nav>
+         <% if user_signed_in? %>
+        <ul class="main-nav">
+        <li ><%= link_to "マイページ", "/users/#{current_user.id}" %>
+        <li ><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:"logout" %>
+        <li ><%= link_to '投稿する', new_photo_path, class: "postin" %></li>
+         </ul>
+         <% else %>
+        <ul class="sub-nav">
+        <li ><%= link_to '新規登録', new_user_registration_path, class: "sign" %></li>
+        <li ><%= link_to 'ログイン', new_user_session_path, class: "sign" %></li>
+        <li ><%= link_to 'Shougun', root_path, class: "top" %></li>
+
+        </ul>
+        <% end %>
+        <%# <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> %>
+        <%# <script src="js/script.js"></script> %>
+        </nav>
+
+        
+  </header>
