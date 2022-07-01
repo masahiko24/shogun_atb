@@ -1,7 +1,5 @@
 <div class="contents row">
-
-  <p><%= @name %>さんの投稿一覧</p>
-   
- 
+  <p><%= "#{@user.name}" %>さんの投稿一覧</p>
+  <%= image_tag @photos.image %>
   <%= link_to 'トップページに戻る', root_path %>
 </div>

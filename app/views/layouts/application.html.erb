@@ -11,9 +11,14 @@
 
 
   <body>
-  
+    <%= render "devise/shared/header", resource: resource %>
+    <%= render "devise/shared/toast", resource: resource %>
+
+
     <%= yield %>
-    
+
+    <%= render "devise/shared/footer", resource: resource %>
+
   </body>
   
 </html>
