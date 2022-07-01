@@ -4,7 +4,7 @@
     <%= form_with(model: @photo, local: true) do |form| %>
       <%= form.text_field :nickname, placeholder: "Nickname" %>
       <%= form.text_field :title, placeholder: "title" %>
-      <%= form.file_field :images, multiple: true, placeholder: "Image Url" %>
+      <%= form.file_field :image, placeholder: "Image Url" %>
 
       <%= form.text_area :memo, placeholder: "memo", rows: "10" %>
       <%= form.submit "SEND" %>
