@@ -16,14 +16,11 @@ a {
   color: rgb(247, 6, 170);
 }
 
-.sign-up {
+.sign {
   margin-right: 30px;
   color:rgb(247, 6, 170);
 }
 
-.sign-in {
-  color:rgb(247, 6, 170);
-}
 
 .big-bg {
   background-size: cover;
@@ -109,6 +106,9 @@ footer {
 }
 
 /* ログイン */
+.login-top {
+  margin-top: 100px;
+}
 
 .login-main {
   position: relative;
@@ -125,6 +125,8 @@ footer {
 #login-page {
   background-image: url(緑.webp);
   min-height: 100vh;
+  min-width: 100%;
+  position: absolute;
 }
 
 .big-bg-log {
