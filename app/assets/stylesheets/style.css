@@ -43,7 +43,7 @@ a {
   text-transform: none;
 }
 
-/* .main-nav {
+.main-nav {
   display: flex;
   margin-top: 8px;
   list-style: none;
@@ -51,9 +51,9 @@ a {
   margin-left: 36px;
   font-size: 15px;
   color: #fff;
-  border-radius: 5px;
-  padding: 18px 32px;
-} */
+  /* border-radius: 5px; */
+  /* padding: 18px 32px; */
+}
 
 .sub-nav {
   display: flex;
