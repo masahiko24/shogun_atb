@@ -1,5 +1,12 @@
 <div class="contents row">
   <p><%= "#{@user.name}" %>さんの投稿一覧</p>
-  <%= image_tag @photos.image %>
+
+<% if @photo.images.attached? %>
+    <div class = 'images'>
+    <% @photo.image.each do |photo| %>
+    <%= image_tag image %>
+    </div>
+    <% end %>
+    <% end %>
   <%= link_to 'トップページに戻る', root_path %>
 </div>
