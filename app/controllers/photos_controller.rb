@@ -1,6 +1,8 @@
 class PhotosController < ApplicationController
+  before_action :set_photo, only: [:edit, :show, :destroy, :update]
+
   def index
-    @photo = Photo.includes(:user)
+    @photo = Photo.all.order(created_at: :desc)
   end
 
   def new
@@ -9,8 +11,6 @@ class PhotosController < ApplicationController
 
   def create
     @photo = Photo.new(photo_params)
-    @photo = Photo.create
-
     if @photo.save
       redirect_to root_path
     else
@@ -18,12 +18,35 @@ class PhotosController < ApplicationController
     end
   end
 
-  def update
+    def update
+      @photo.update(photo_params)
+      @photo = Photo.update
+      if @photo.save
+        redirect_to root_path
+     else
+        render :edit
+    end
   end
+
+  def show
+  end
+
+  def edit
+  end
+
+  def destroy
+  end
+  
 
   private
 
   def photo_params
     params.require(:photo).permit(:nickname, :title, :image, :memo).merge(user_id: current_user.id)
   end
+
+  def set_photo
+    @photo = Photo.find(params[:id])
+  end
+
+
 end
