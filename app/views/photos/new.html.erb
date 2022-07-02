@@ -1,7 +1,7 @@
 <div class="contents row">
   <div class="container">
     <h3>投稿する</h3>
-    <%= form_with(model: @photo, local: true) do |form| %>
+    <%= form_with(model: @photo, local: true, class:"form") do |form| %>
       <%= form.text_field :nickname, placeholder: "Nickname" %>
       <%= form.text_field :title, placeholder: "title" %>
       <%= form.file_field :image, placeholder: "Image Url" %>
