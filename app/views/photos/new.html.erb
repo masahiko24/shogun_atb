@@ -1,13 +1,31 @@
 <div class="contents row">
   <div class="container">
     <h3>投稿する</h3>
-    <%= form_with(model: @photo, local: true, class:"form") do |form| %>
+    <%= form_with(model: @photo, local: true, class:"form-text") do |form| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="form-group">
       <%= form.text_field :nickname, placeholder: "Nickname" %>
+      </div>
+         <div class="form-group">
+
       <%= form.text_field :title, placeholder: "title" %>
+            </div>
+
+          <div class="form-group">
+
       <%= form.file_field :image, placeholder: "Image Url" %>
+      </div>
+          <div class="form-group">
 
       <%= form.text_area :memo, placeholder: "memo", rows: "10" %>
+          </div>
+          <div class="form-group">
+
       <%= form.submit "SEND" %>
+          </div>
+
     <% end %>
+    </div>
   </div>
 </div>
