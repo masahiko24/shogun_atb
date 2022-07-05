@@ -1,20 +1,19 @@
-<header class="headewrapper">
-        <nav>
+<header class="heade wrapper">
+        <div class="nav">
+        <h1 ><%= link_to 'Shougun', root_path, class: "top" %></h1>
+
          <% if user_signed_in? %>
-        <ul class="main-nav">
+
+        <ul class="nav-right">
         <li ><%= link_to "マイページ", "/users/#{current_user.id}",class: "sign"  %>
         <li ><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:"sign" %>
-        <li ><%= link_to '投稿する', new_photo_path, class: "sign" %></li>
          </ul>
+      
          <% else %>
-        <ul class="sub-nav">
+        <ul class="nav-left">
         <li ><%= link_to '新規登録', new_user_registration_path, class: "sign" %></li>
         <li ><%= link_to 'ログイン', new_user_session_path, class: "sign" %></li>
-        <li ><%= link_to 'Shougun', root_path, class: "top" %></li>
-
         </ul>
         <% end %>
-        </nav>
-
-        
+        </div>
   </header>
