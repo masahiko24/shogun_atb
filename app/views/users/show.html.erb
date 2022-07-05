@@ -1,12 +1,17 @@
 <div class="contents row">
   <p><%= "#{@user.name}" %>さんの投稿一覧</p>
 
-<% if @photo.images.attached? %>
-    <div class = 'images'>
-    <% @photo.image.each do |photo| %>
-    <%= image_tag image %>
-    </div>
-    <% end %>
-    <% end %>
+    <% @photo.each do |photo| %>
+      <li class='wrapper grid'>
+        <%# <%= link_to item_path(item.id), method: :get do %>
+        
+        <div class='item'>
+          <%= image_tag photo.image, class: "item-img",size: "380x380" %><br>
+            <%= photo.nickname %><br>
+            <%= photo.title %><br>
+            <%= photo.memo %><br>
+
+        <% end %>
+
   <%= link_to 'トップページに戻る', root_path %>
 </div>
