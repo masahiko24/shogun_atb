@@ -1,11 +1,90 @@
- <%= render "devise/shared/header", resource: resource %>
 
 
-<div id="home" class="big-bg">
-<div class="home-content wrapper">
-<h2 class="page-title">shogun-authorized<br>trading book</h2>
-<p>そうだ 御朱印集めに行こう</p>
+<div class="main">
+
+  <div id="home" class="big-bg">
+   <div class="home-content wrapper">
+     <h2 class="page-title">shogun-authorized<br>trading book
+     <p>そうだ 御朱印集めに行こう</p>
+     </h2>
+    </div>
+
+
+   </div><!-- /#home -->
+
+ 
+
+
+     <div id="room" class="post">
+        <div class="room-content wrapper">
+          <div class="room-content wrapper">
+      <h2 class="post-gest">投稿一覧</h2>
+      <p>
+      ここに投稿の一覧が表示される
+      </p>
+      </div>
+      </div>
+    
+
+      <li class='wrapper grid'>
+      <% @photo.each do |photo| %>
+
+        <%# <%= link_to item_path(item.id), method: :get do %>
+        
+        <div class='item'>
+          <%= image_tag photo.image, class: "item-img",size: "380x380" %><br>
+            <%= photo.nickname %><br>
+            <%= photo.title %><br>
+            <%= photo.memo %><br>
+</div>
+        <% end %>
+         </li>
+
+    <div class="wrapper grid">
+    <div class="item">
+    <%= image_tag 'ガーベラ.jpeg', size: "380x380"%>
+    <p>写真キャプション</p>
+    </div>
+
+      
+
+    <div class="item">
+    <%= image_tag '御朱印1.webp', size: "380x380" %>
+    <p>写真キャプション</p>
+        </div>
+
+
+    <div class="item">
+    <%= image_tag '太宰府紫陽花.jpeg', size: "380x380"%>
+    <p>写真キャプション</p>
+        </div>
+
+
+    <div class="item">
+    <%= image_tag '竹林.jpeg', size: "380x380"%>
+    <p>写真キャプション</p>
+    </div>
+
+    <div class="item">
+    <%= image_tag '風鈴.jpeg', size: "380x380"%>
+    <p>写真キャプション</p>
+    </div>
+
+    <div class="item">
+    <%= image_tag '新緑2.jpeg', size: "380x380"%>
+    <p>写真キャプション</p>
+    </div>
+
+    </div>
+
+   
+   
+
+
 </div>
 
-    </div><!-- /#home -->
+ <%= link_to(new_photo_path, class: 'purchase-btn') do %>
+     <span class='purchase-btn-text'>投稿する</span>
+    <%= image_tag '水引2.jpeg' , size: '65x50' ,class: "purchase-btn-icon" %>
+    <% end %>
   
