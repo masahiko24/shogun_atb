@@ -1,9 +1,11 @@
+
 <div id="login-page" class="big-bg-log">
 <div class="login-top">
  <%= form_with model: @user, url: user_session_path, local: true do |f| %>
 
-</div>
+
   <div class="login-main">
+  <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
     <%= f.label :email %><br />
@@ -28,8 +30,9 @@
 <% end %>
 </div>
 </div>
+</div>
 
-    <%= render "devise/shared/footer", resource: resource %>
+    <%# <%= render "devise/shared/footer", resource: resource %> 
 
 <%# <%= render "devise/shared/links" %>
 
