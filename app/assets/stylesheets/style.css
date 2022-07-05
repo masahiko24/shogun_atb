@@ -1,9 +1,8 @@
 @charset "UTF-8";
-
+/* 
 h1 {
   font-size: 40px;
-  text-align: center;
-}
+} */
 
 a {
   text-decoration: none;
@@ -12,31 +11,36 @@ a {
 .top {
   font-size: 20px;
   font-weight: 600;
-  margin-left: 420px;
   color: rgb(247, 6, 170);
+  
 }
 
+.nav {
+  display: flex;
+    justify-content: space-between;
+}
+
+.nav-right {
+display: flex;
+font-size: 20px;
+  font-weight: 600;
+}
 .sign {
-  margin-right: 30px;
+  margin-left: 30px;
   color:rgb(247, 6, 170);
 }
 
 
 .big-bg {
   background-size: cover;
-  /* background-position: center top; */
+  background-position: center top;
   opacity: 100%
 }
 
-.header {
-  /* background-color: #fff; */
-  display: flex;
-  justify-content: space-between;
-}
 
 #home {
-  background-image: url(御朱印1.webp);
-  min-height: 120%;
+  background-image: url(kyoto.jpeg);
+  min-height: 100%;
 }
 
 #home.page-title {
@@ -55,25 +59,21 @@ a {
   /* padding: 18px 32px; */
 }
 
-.sub-nav {
+.nav-left {
   display: flex;
-  list-style: none;
-  background-color:#fff;
-  font-size:20px;
-  /* padding: 10px 10px; */
+  font-size: 20px;
   font-weight: 600;
 }
 
-/* .wrapper {
-  max-width: 100%;
-  margin: 0 ;
-  padding: 0;
-} */
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
 
 .home-content {
-  height: 660px;
+  height: 90vh;
   text-align: right;
-  /* margin-top: 5%; */
 }
 
 .home-content p {
@@ -85,6 +85,8 @@ a {
 .page-title {
   font-size: 50px;
   color: #fff;
+  text-shadow: 0 0 5px rgb(0 0 0 / 90%);
+
 }
 
 /* .button {
@@ -105,93 +107,84 @@ footer {
   background-color: rgb(249, 188, 230);
 }
 
-/* ログイン */
-.login-top {
-  margin-top: 100px;
-}
+/* 投稿アイコン */
 
-.login-main {
-  position: relative;
-  height: 560px;
-  width: 410px;
-  margin: auto;
-  padding: 60px 60px;
-  background: url(新緑.webp) no-repeat   center center #505050;   
+.purchase-btn {
+  width: 120px;
+      background: #f3f705;
+      text-align: center;
+      border-radius: 4%;
+      bottom: 32px;
+      right: 32px;
+      position: fixed;
+      padding: 15px;
+  }
+
+/* 一覧二段目 */
+
+.post {
   background-size: cover;
-  /* box-shadow: 0px 30px 60px -5px #000; */
-  border-radius: 10px;
+  background-position: center;
+  opacity: 100%
 }
 
-#login-page {
-  background-image: url(緑.webp);
+
+#room {
+  background-image: url();
   min-height: 100vh;
-  min-width: 100%;
-  position: absolute;
 }
 
-.big-bg-log {
-  background-size: cover;
-  background-position: center top;
-  /* opacity: 100% */
+.room-content {
+  max-width: 560px;
+  margin-top: 10%;
 }
 
-.actions {
-  background-color: #1161ed;
-  color: #FFF;
-  width: 100%;
-  padding: 10px 20px;
-  display: block;
+.post-gest {
   text-align: center;
-  font-size: 200%;
-  height: 39px;
-  border-radius: 20px;
-  margin-top: 30px;
-  transition: all 0.5s ease-in-out;
-  border: none;
-  text-transform: uppercase;
 }
 
-.actions:hover {
-  background: #4082f5;
-  box-shadow: 0px 4px 35px -5px #4082f5;
-  cursor: pointer;
+.post-gest p {
+  font-size: 1.125rem;
+  margin-top: 10px 0 0;
 }
 
-.actions:focus {
-  outline: none;
+
+#room.post-gest {
+  text-transform: none;
 }
 
-.field {
-  color: #fff;
-  font-size: 40px;
+.room-content {
+  height: 30vh;
 }
 
-/* 新規登録 */
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 6%;
+  margin-bottom: 50px;
 
-.signup-main {
+}
+/* 
+.item-lists {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-lists>.list {
+  width: 37vh;
+  padding: 1vw;
+  background-color: #FFF;
+}
+
+
+.item-img-content {
   position: relative;
-  height: 560px;
-  width: 410px;
-  margin: auto;
-  padding: 60px 60px;
-  background: url(京都表紙.jpeg) no-repeat   center center #505050;   
-  background-size: cover;
-  /* box-shadow: 0px 30px 60px -5px #000; */
-  border-radius: 10px;
 }
 
-.field-new {
-  color: #fff;
-}
-
-
-#signup-page {
-  background-image: url(京都-夜桜-イメージ.webp);
-  min-height: 100vh;
-}
-
-.big-bg-sign {
-  background-size: cover;
-  background-position: center top;
-  /* opacity: 100% */
-}
+.item-img {
+  width: 33vh;
+  height: 33vh;
+} */
