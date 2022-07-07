@@ -1,35 +1,87 @@
 
-<div id="home" class="big-bg">
-  <header class="headewrapper">
-        <nav>
-         <% if user_signed_in? %>
-        <ul class="main-nav">
-        <li ><%= link_to "マイページ", "/users/#{current_user.id}" %>
-        <li ><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:"logout" %>
-        <li ><%= link_to '投稿する', new_photo_path, class: "postin" %></li>
-         </ul>
-         <% else %>
-        <ul class="sub-nav">
-        <li ><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
-        <li ><%= link_to 'ログイン', new_user_session_path, class: "sign-in" %></li>
-        <li ><%= link_to 'Shougun', root_path, class: "top" %></li>
 
-        </ul>
+<div class="main">
+
+  <div id="home" class="big-bg">
+   <div class="home-content wrapper">
+     <h2 class="page-title">shogun-authorized<br>trading book
+     <p>そうだ 御朱印集めに行こう</p>
+     </h2>
+    </div>
+
+
+   </div><!-- /#home -->
+
+ 
+
+
+     <div id="room" class="post">
+        <div class="room-content wrapper">
+          <div class="room-content wrapper">
+      <h2 class="post-gest">投稿一覧</h2>
+      </div>
+      </div>
+    
+
+      <div class='wrapper grid'>
+      <% @photos.each do |photo| %>
+
+        <%# <li ><%= link_to "/users/#{current_user.id}", method: :get, class: "sign"  %>
+        
+        <div class='item'>
+          <%= image_tag photo.image, class: "item-img",size: "380x380" %><br>
+            <%= photo.nickname %><br>
+            <%= photo.title %><br>
+            <%= photo.memo %><br>
+        </div>
         <% end %>
-        <%# <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> %>
-        <%# <script src="js/script.js"></script> %>
-        </nav>
-  </header>
+         </>
 
-<div class="home-content wrapper">
-<h2 class="page-title">shogun-authorized<br>trading book</h2>
-<p>そうだ 御朱印集めに行こう</p>
+    <div class="wrapper grid">
+    <div class="item">
+    <%= image_tag 'ガーベラ.jpeg', size: "380x380"%>
+    <p>写真キャプション</p>
+    </div>
+
+      
+
+    <div class="item">
+    <%= image_tag '御朱印1.webp', size: "380x380" %>
+    <p>写真キャプション</p>
+        </div>
+
+
+    <div class="item">
+    <%= image_tag '太宰府紫陽花.jpeg', size: "380x380"%>
+    <p>写真キャプション</p>
+        </div>
+
+
+    <div class="item">
+    <%= image_tag '竹林.jpeg', size: "380x380"%>
+    <p>写真キャプション</p>
+    </div>
+
+    <div class="item">
+    <%= image_tag '風鈴.jpeg', size: "380x380"%>
+    <p>写真キャプション</p>
+    </div>
+
+    <div class="item">
+    <%= image_tag '新緑2.jpeg', size: "380x380"%>
+    <p>写真キャプション</p>
+    </div>
+
+    </div>
+
+   
+   
+
+
 </div>
 
-   <footer>
-      <p>
-        Copyright Masahiko.Arimura 2022.
-      </p>
-    </footer>
-    </div><!-- /#home -->
+ <%= link_to(new_photo_path, class: 'purchase-btn') do %>
+     <span class='purchase-btn-text'>投稿する</span>
+    <%= image_tag '水引2.jpeg' , size: '65x50' ,class: "purchase-btn-icon" %>
+    <% end %>
   

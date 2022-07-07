@@ -1,0 +1,29 @@
+<header class="heade wrapper">
+        <div class="nav">
+        <%# <h1 ><%= link_to 'Shougun', root_path, class: "top" %></h1>
+    <%= link_to image_tag('1.png', class:"head_logo"), root_path %>
+
+  <%# <%= link_to image_tag(prototype.image, class: "card__image" ), prototype_path(prototype.id) %>
+
+         <% if user_signed_in? %>
+
+        <div class="nav-right">
+                <%# <%= link_to image_tag('マイページ.png', class:"head_logo_sign"),  "/users/#{current_user.id}" %></li> %>
+        <%= link_to "マイページ",  "/users/#{current_user.id}", method: :get, class: "sign"  %>
+              
+                <%# <%= link_to image_tag('ログアウト.png', class:"head_logo_sign"), destroy_user_session_path, method: :delete %></li> %>
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:"sign" %>
+         </div>
+      
+         <% else %>
+        <div class="nav-left">
+        <%# <li ><%= link_to '新規登録', new_user_registration_path, class: "sign" %></li> 
+        <%# <li ><%= link_to 'ログイン', new_user_session_path, class: "sign" %></li> 
+        <div class="nav-left-sub">
+        <%= link_to image_tag('3.png', class:"head_logo_sign"), new_user_registration_path %></li>
+        <%= link_to image_tag('2.png', class:"head_logo_sign"), new_user_session_path %></li>
+        </div>
+        </div>
+        <% end %>
+        </div>
+  </header>

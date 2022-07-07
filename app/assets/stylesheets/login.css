@@ -1,0 +1,64 @@
+/* ログイン */
+.page-top {
+  margin-bottom: 30px;
+}
+
+.login-main {
+  /* position: relative; */
+  height: 560px;
+  width: 410px;
+  margin: auto;
+  padding: 60px 60px;
+  background: url(新緑.webp) no-repeat   center center #505050;   
+  background-size: cover;
+  /* box-shadow: 0px 30px 60px -5px #000; */
+  border-radius: 10px;
+  
+}
+
+/* #login-page {
+  background-image: url(緑.webp);
+  min-height: 100vh;
+  min-width: 100%;
+  position: absolute;
+} */
+
+/* .big-bg-log { */
+  /* background-size: cover; */
+  /* background-position: center top; */
+  /* opacity: 100% */
+/* } */
+
+.actions .form__btn {
+  background-color: #1161ed;
+  color: #FFF;
+  width: 100%;
+  padding: 10px 20px;
+  display: block;
+  text-align: center;
+  font-size: 150%;
+  height: 50px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+}
+
+.actions:hover {
+  background: #4082f5;
+  box-shadow: 0px 4px 35px -5px #4082f5;
+  cursor: pointer;
+  border-radius: 20px;
+
+}
+
+.actions:focus {
+  outline: none;
+}
+
+.field {
+  color: #fff;
+  text-shadow: 0 0 5px rgb(0 0 0 / 90%);
+
+}

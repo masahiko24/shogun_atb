@@ -1,6 +1,12 @@
 class UsersController < ApplicationController
+  
+  
   def show
-    @name = current_user.name
-    @photos = current_user.photos
+    @user = User.find(params[:id])
+    @photo = Photo.find(params[:id])
+    @photos = @user.photos.includes(:user).order(created_at: :desc)
+
+
   end
+
 end
