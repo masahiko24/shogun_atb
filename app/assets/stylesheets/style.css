@@ -8,6 +8,15 @@ a {
   text-decoration: none;
 }
 
+.head_logo {
+  width: 25%;
+  margin: 15px 0 0 50px;
+}
+
+.head_logo_sign {
+  width: 35%;
+}
+
 .top {
   font-size: 20px;
   font-weight: 600;
@@ -17,7 +26,7 @@ a {
 
 .nav {
   display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .nav-right {
@@ -25,11 +34,10 @@ display: flex;
 font-size: 20px;
   font-weight: 600;
 }
-.sign {
-  margin-left: 30px;
-  color:rgb(247, 6, 170);
-}
 
+.nav-left {
+  display: flex;
+  }
 
 .big-bg {
   background-size: cover;
@@ -59,15 +67,10 @@ font-size: 20px;
   /* padding: 18px 32px; */
 }
 
-.nav-left {
-  display: flex;
-  font-size: 20px;
-  font-weight: 600;
-}
 
 .wrapper {
   max-width: 1400px;
-  margin: 0 auto;
+  margin: auto;
   padding: 0 4%;
 }
 
@@ -154,7 +157,7 @@ footer {
 }
 
 .room-content {
-  height: 30vh;
+  height: 5vh;
 }
 
 .grid {
@@ -188,3 +191,7 @@ footer {
   width: 33vh;
   height: 33vh;
 } */
+
+.card__image {
+  width: 50%;
+}

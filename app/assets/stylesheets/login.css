@@ -1,10 +1,10 @@
 /* ログイン */
-.login-top {
-  margin-top: 100px;
+.page-top {
+  margin-bottom: 30px;
 }
 
 .login-main {
-  position: relative;
+  /* position: relative; */
   height: 560px;
   width: 410px;
   margin: auto;
@@ -13,30 +13,31 @@
   background-size: cover;
   /* box-shadow: 0px 30px 60px -5px #000; */
   border-radius: 10px;
+  
 }
 
-#login-page {
+/* #login-page {
   background-image: url(緑.webp);
   min-height: 100vh;
   min-width: 100%;
   position: absolute;
-}
+} */
 
-.big-bg-log {
-  background-size: cover;
-  background-position: center top;
+/* .big-bg-log { */
+  /* background-size: cover; */
+  /* background-position: center top; */
   /* opacity: 100% */
-}
+/* } */
 
-.actions {
+.actions .form__btn {
   background-color: #1161ed;
   color: #FFF;
   width: 100%;
   padding: 10px 20px;
   display: block;
   text-align: center;
-  font-size: 200%;
-  height: 39px;
+  font-size: 150%;
+  height: 50px;
   border-radius: 20px;
   margin-top: 30px;
   transition: all 0.5s ease-in-out;
@@ -48,6 +49,8 @@
   background: #4082f5;
   box-shadow: 0px 4px 35px -5px #4082f5;
   cursor: pointer;
+  border-radius: 20px;
+
 }
 
 .actions:focus {
@@ -56,5 +59,6 @@
 
 .field {
   color: #fff;
-  font-size: 40px;
+  text-shadow: 0 0 5px rgb(0 0 0 / 90%);
+
 }

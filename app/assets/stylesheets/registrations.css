@@ -1,7 +1,10 @@
 /* 新規登録 */
 
+
+
+
 .signup-main {
-  position: relative;
+  /* position: relative; */
   height: 560px;
   width: 410px;
   margin: auto;
@@ -12,21 +15,20 @@
   border-radius: 10px;
 }
 
-.field-new {
+/* .field-new {
   color: #fff;
   text-shadow: 0 0 5px rgb(0 0 0 / 90%);
 
-}
-
+} */
 
 /* #signup-page {
   background-image: url(京都-夜桜-イメージ.webp);
   min-height: 100vh;
 } */
 
-.big-bg-sign {
+/* .big-bg-sign {
   background-size: cover;
   background-position: center top;
   /* opacity: 100% */
-}
+/* } */
 
