@@ -19,26 +19,23 @@
         <div class="room-content wrapper">
           <div class="room-content wrapper">
       <h2 class="post-gest">投稿一覧</h2>
-      <p>
-      ここに投稿の一覧が表示される
-      </p>
       </div>
       </div>
     
 
-      <li class='wrapper grid'>
-      <% @photo.each do |photo| %>
+      <div class='wrapper grid'>
+      <% @photos.each do |photo| %>
 
-        <%# <%= link_to item_path(item.id), method: :get do %>
+        <%# <li ><%= link_to "/users/#{current_user.id}", method: :get, class: "sign"  %>
         
         <div class='item'>
           <%= image_tag photo.image, class: "item-img",size: "380x380" %><br>
             <%= photo.nickname %><br>
             <%= photo.title %><br>
             <%= photo.memo %><br>
-</div>
+        </div>
         <% end %>
-         </li>
+         </>
 
     <div class="wrapper grid">
     <div class="item">

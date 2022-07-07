@@ -2,23 +2,26 @@
   <div class="container">
     <h3>投稿する</h3>
     <%= form_with(model: @photo, local: true, class:"form-text") do |form| %>
-      <%= render "devise/shared/error_messages", resource: resource %>
+   <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="form-group">
-      <%= form.text_field :nickname, placeholder: "Nickname" %>
+    <%= form.label :Nickname %>
+      <%= form.text_field :nickname %>
       </div>
          <div class="form-group">
-
-      <%= form.text_field :title, placeholder: "title" %>
+      <%= form.label :Title %>
+      <%= form.text_field :title %>
             </div>
 
           <div class="form-group">
-
-      <%= form.file_field :image, placeholder: "Image Url" %>
+      <%= form.label :Image %>
+      <%= form.file_field :image %>
       </div>
-          <div class="form-group">
 
-      <%= form.text_area :memo, placeholder: "memo", rows: "10" %>
+          <div class="form-group">
+    <%= form.label :Memo%>
+
+      <%= form.text_area :memo, rows: "10" %>
           </div>
           <div class="form-group">
 

@@ -1,17 +1,38 @@
-<div class="contents row">
+<div class="show">
   <p><%= "#{@user.name}" %>さんの投稿一覧</p>
 
-    <% @photo.each do |photo| %>
-      <li class='wrapper grid'>
-        <%# <%= link_to item_path(item.id), method: :get do %>
-        
+   <table class="table">
+        <tbody>
+          <tr>
+            <th class="table__col1">名前</th>
+            <td class="table__col2"><%= @user.name %></td>
+          </tr>
+         
+        </tbody>
+      </table>
+
+        <h2 class="page-heading">
+        <%= "#{@user.name}さんのプロトタイプ"%>
+      </h2>
+
+
+  <%# <div class="user__card"> %>
+        <%# 部分テンプレートでそのユーザーが投稿したプロトタイプ投稿一覧を表示する %>
+   <%# <%= render partial: "photos/photo", collection: @photos %> 
+      <%# </div> %>
+            <div class='wrapper grid'>
         <div class='item'>
-          <%= image_tag photo.image, class: "item-img",size: "380x380" %><br>
+
+<% @photos.each do |photo|  %>
+   <%= image_tag photo.image, class: "item-img",size: "380x380" %><br>
             <%= photo.nickname %><br>
             <%= photo.title %><br>
             <%= photo.memo %><br>
+                    </div>
 
-        <% end %>
+  <% end %>
+
+                    </div>
 
   <%= link_to 'トップページに戻る', root_path %>
 </div>
