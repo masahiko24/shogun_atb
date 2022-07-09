@@ -160,32 +160,31 @@ footer {
   grid-template-columns: 1fr 1fr 1fr ;
   margin-top: 6%;
   margin-bottom: 50px;
-
 }
 
-.item-lists {
+/* .item-lists {
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
+} */
+/* 
 .item-lists>.list {
   width: 37vh;
   padding: 1vw;
   background-color: #FFF;
-}
-
-
-.item-img-content {
-  position: relative;
-}
-
-.item-img {
-  width: 33vh;
-  height: 33vh;
 } */
 
-.card__image {
+
+/* .item-img-content {
+  position: relative;
+} */
+
+.item-img {
+  width: 35vh;
+  height: 35vh;
+} 
+
+/* .card__image {
   width: 50%;
-}
+} */
