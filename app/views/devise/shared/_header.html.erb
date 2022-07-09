@@ -8,11 +8,8 @@
          <% if user_signed_in? %>
 
         <div class="nav-right">
-                <%# <%= link_to image_tag('マイページ.png', class:"head_logo_sign"),  "/users/#{current_user.id}" %></li> 
-        <%= link_to "マイページ",  "/users/#{current_user.id}", method: :get, class: "sign"  %>
-              
-                <%# <%= link_to image_tag('ログアウト.png', class:"head_logo_sign"), destroy_user_session_path, method: :delete %></li> 
-        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:"sign" %>
+         <%= link_to image_tag('4.png', class:"head_logo_sign"),  "/users/#{current_user.id}"%></li> 
+        <%= link_to image_tag('5.png', class:"head_logo_sign"), destroy_user_session_path, method: :delete %></li> 
          </div>
       
          <% else %>
