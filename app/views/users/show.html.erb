@@ -11,6 +11,8 @@
         </tbody>
       </table>
 
+
+
         <h2 class="page-heading">
         <%= "#{@user.name}さんのプロトタイプ"%>
       </h2>
@@ -24,13 +26,13 @@
      <div class='item'>
 
     <% @photos.each do |photo|  %>
-      <%= image_tag photo.image, class: "item-img",size: "380x380" %><br>
+      <%= image_tag photo.image, class: "item-img" %><br>
                 <%= photo.nickname %><br>
                 <%= photo.title %><br>
                 <%= photo.memo %><br>
-                        </div>
-</div>
+      </div>
       <% end %>
+       </div>
 
                     
 
