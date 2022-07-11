@@ -37,10 +37,19 @@ https://shogunatb.herokuapp.com/
 ---
 https://docs.google.com/spreadsheets/d/1FK8oeyrRVcgyHEPr_Z045k9Lila6QUdsoR76Ko-h-QI/edit#gid=982722306  
 
+実装した機能について  
+---
+TOPページ
+[![Image from Gyazo](https://i.gyazo.com/6acf5fd3ec6a9e110c860fb51c30b9ee.gif)](https://gyazo.com/6acf5fd3ec6a9e110c860fb51c30b9ee)  
+
+ログインページ
+[![Image from Gyazo](https://i.gyazo.com/927cd20394a4d0d1ab24829a00a83328.jpg)](https://gyazo.com/927cd20394a4d0d1ab24829a00a83328)
+
+
+
 実装予定の機能  
 ---
  1. 携帯電話でも表示する様にする  
- 1. Google Mapと連携する  
  1. いいね機能の実装
 
 データベース設計  
