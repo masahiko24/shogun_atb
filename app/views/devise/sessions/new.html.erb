@@ -1,39 +1,38 @@
+<div class="login">
 
-<div id="login-page" class="big-bg-log">
-<div class="page-top">
- <%= form_with model: @user, url: user_session_path, local: true do |f| %>
+  <div class="page-top">
+    <%= form_with model: @user, url: user_session_path, local: true do |f| %>
 
-  <div class="login-main">
-  <%= render "devise/shared/error_messages", resource: resource %>
+    <div class="login-form-left">
+    <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
-
-  <%# <% if devise_mapping.rememberable? %>
-    <%# <div class="field"> %>
-      <%# <%= f.check_box :remember_me %> 
-      <%# <%= f.label :remember_me %> 
-    <%# </div>  %>
-  <%# <% end %> 
-   
-   
-   
-   
-   
-    <div class="actions">
-    <%= f.submit "Log in", class: :form__btn %>
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
     </div>
-<% end %>
+
+    <div class="field">
+      <%= f.label :password %><br />
+      <%= f.password_field :password, autocomplete: "current-password" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Log in", class: :form__btn %>
+    </div>
+  <% end %>
+  </div>
+  </div>
+
+  <div class="page-top">
+  <div class="login-form">
+
+
 </div>
 </div>
 </div>
+
+</div>
+
 
     <%# <%= render "devise/shared/footer", resource: resource %> 
 

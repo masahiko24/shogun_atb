@@ -1,10 +1,11 @@
 <%# <h2>Sign up</h2> %>
+<div class="signup">
 <div id="signup-page" class="big-bg-sign">
 <div class="page-top">
 
  <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
 
-  <div class="signup-main">
+  <div class="signup-form">
   <%= render "devise/shared/error_messages", resource: resource %>
  
   <div class="field">
@@ -35,6 +36,12 @@
   </div>
 <% end %>
 </div>
+</div>
+
+<div class="page-top">
+  <div class="signup-main">
+  </div>
+  </div>
 </div>
 <%# <%= render "devise/shared/links" %>
 

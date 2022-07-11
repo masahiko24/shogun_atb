@@ -1,21 +1,23 @@
 <header class="heade wrapper">
         <div class="nav">
-        <%# <h1 ><%= link_to 'Shougun', root_path, class: "top" %></h1>
-    <%= link_to image_tag('1.png', class:"head_logo"), root_path %>
+        <%= link_to image_tag('1.png', class:"head_logo"), root_path %>
 
-  <%# <%= link_to image_tag(prototype.image, class: "card__image" ), prototype_path(prototype.id) %>
+   <%# <%= link_to image_tag(prototype.image, class: "card__image" ), prototype_path(prototype.id) %>
 
          <% if user_signed_in? %>
 
         <div class="nav-right">
+        <div class="nav-left-center">
          <%= link_to image_tag('4.png', class:"head_logo_sign"),  "/users/#{current_user.id}"%></li> 
+         </div>
+
+        <div class="nav-left-sub-right">
         <%= link_to image_tag('5.png', class:"head_logo_sign"), destroy_user_session_path, method: :delete %></li> 
+        </div>
          </div>
       
          <% else %>
         <div class="nav-left">
-        <%# <li ><%= link_to '新規登録', new_user_registration_path, class: "sign" %></li> 
-        <%# <li ><%= link_to 'ログイン', new_user_session_path, class: "sign" %></li> 
         <div class="nav-left-center">
         <%= link_to image_tag('3.png', class:"head_logo_sign"), new_user_registration_path %></li>
         </div>
