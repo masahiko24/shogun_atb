@@ -8,13 +8,18 @@ a {
   text-decoration: none;
 }
 
+/* header */
+
+
 .head_logo {
-  width: 25%;
-  margin: 15px 0 0 50px;
+  width: 15%;
+  margin: 20px 0 10px 50px;
 }
 
 .head_logo_sign {
-  width: 35%;
+  width: 40%;
+  margin-top: 20px;
+
 }
 
 .top {
@@ -38,6 +43,8 @@ font-size: 20px;
 .nav-left {
   display: flex;
   }
+
+
 
 .big-bg {
   background-size: cover;
@@ -125,73 +132,61 @@ footer {
 
 /* 一覧二段目 */
 
-.post {
-  background-size: cover;
-  background-position: center;
-  opacity: 100%
-}
 
-
-#room {
-  background-image: url();
-  min-height: 100vh;
-}
 
 .room-content {
-  max-width: 560px;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .post-gest {
   text-align: center;
 }
 
-.post-gest p {
+/* .post-gest p {
   font-size: 1.125rem;
   margin-top: 10px 0 0;
-}
+} */
 
 
-#room.post-gest {
+/* #room.post-gest {
   text-transform: none;
-}
+} */
 
-.room-content {
+/* .room-content {
   height: 5vh;
-}
+} */
 
 .grid {
   display: grid;
   gap: 26px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
   margin-top: 6%;
   margin-bottom: 50px;
-
 }
-/* 
-.item-lists {
+
+/* .item-lists {
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
+} */
+/* 
 .item-lists>.list {
   width: 37vh;
   padding: 1vw;
   background-color: #FFF;
-}
-
-
-.item-img-content {
-  position: relative;
-}
-
-.item-img {
-  width: 33vh;
-  height: 33vh;
 } */
 
-.card__image {
+
+/* .item-img-content {
+  position: relative;
+} */
+
+.item-img {
+  width: 35vh;
+  height: 35vh;
+} 
+
+/* .card__image {
   width: 50%;
-}
+} */

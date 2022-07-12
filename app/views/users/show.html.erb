@@ -11,6 +11,8 @@
         </tbody>
       </table>
 
+
+
         <h2 class="page-heading">
         <%= "#{@user.name}さんのプロトタイプ"%>
       </h2>
@@ -20,19 +22,24 @@
         <%# 部分テンプレートでそのユーザーが投稿したプロトタイプ投稿一覧を表示する %>
    <%# <%= render partial: "photos/photo", collection: @photos %> 
       <%# </div> %>
-            <div class='wrapper grid'>
-        <div class='item'>
+     <div class='wrapper grid'>
+     <div class='item'>
 
-<% @photos.each do |photo|  %>
-   <%= image_tag photo.image, class: "item-img",size: "380x380" %><br>
-            <%= photo.nickname %><br>
-            <%= photo.title %><br>
-            <%= photo.memo %><br>
-                    </div>
+    <% @photos.each do |photo|  %>
+      <%= image_tag photo.image, class: "item-img" %><br>
+                <%= photo.nickname %><br>
+                <%= photo.title %><br>
+                <%= photo.memo %><br>
+      </div>
+      <% end %>
+       </div>
 
-  <% end %>
-
-                    </div>
+                    
 
   <%= link_to 'トップページに戻る', root_path %>
 </div>
+
+ <%= link_to(new_photo_path, class: 'purchase-btn') do %>
+     <span class='purchase-btn-text'>投稿する</span>
+    <%= image_tag '水引2.jpeg' , size: '65x50' ,class: "purchase-btn-icon" %>
+    <% end %>

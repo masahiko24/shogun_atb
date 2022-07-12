@@ -2,7 +2,6 @@ class PhotosController < ApplicationController
   before_action :set_photo, only: [:edit, :show, :destroy, :update]
   before_action :authenticate_user!, except: [:index, :show]
 
-
   def index
     @photos = Photo.includes(:user).order(created_at: :desc)
   end
@@ -15,23 +14,25 @@ class PhotosController < ApplicationController
     @photo = Photo.new(photo_params)
     @photo.user = current_user
     if @photo.save
-      redirect_to root_path, notice: "投稿が完了しました。"
+      redirect_to root_path, notice: '投稿が完了しました。'
     else
       render :new
     end
   end
 
-    def update
-      @photo.update(photo_params)
-      @photo = Photo.update
-      if @photo.save
-        redirect_to root_path, notice: "投稿の更新が完了しました。"
-     else
-        render :edit
+  def update
+    @photo.update(photo_params)
+    @photo = Photo.update
+    if @photo.save
+      redirect_to root_path, notice: '投稿の更新が完了しました。'
+    else
+      render :edit
     end
   end
 
   def show
+    @comment = Comment.new
+    @comments = @photo.comments.includes(:user)
   end
 
   def edit
@@ -39,7 +40,6 @@ class PhotosController < ApplicationController
 
   def destroy
   end
-  
 
   private
 
@@ -49,8 +49,5 @@ class PhotosController < ApplicationController
 
   def set_photo
     @photo = Photo.find(params[:id])
-
   end
-
-
 end

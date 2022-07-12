@@ -17,66 +17,25 @@
 
      <div id="room" class="post">
         <div class="room-content wrapper">
-          <div class="room-content wrapper">
       <h2 class="post-gest">投稿一覧</h2>
-      </div>
-      </div>
+  </div>
+  </div>
+    
     
 
       <div class='wrapper grid'>
-      <% @photos.each do |photo| %>
+       <% @photos.each do |photo| %>
 
         <%# <li ><%= link_to "/users/#{current_user.id}", method: :get, class: "sign"  %>
         
-        <div class='item'>
-          <%= image_tag photo.image, class: "item-img",size: "380x380" %><br>
+        <div class='items'>
+          <%= image_tag photo.image, class: "item-img" %><br>
             <%= photo.nickname %><br>
             <%= photo.title %><br>
             <%= photo.memo %><br>
         </div>
         <% end %>
-         </>
-
-    <div class="wrapper grid">
-    <div class="item">
-    <%= image_tag 'ガーベラ.jpeg', size: "380x380"%>
-    <p>写真キャプション</p>
-    </div>
-
-      
-
-    <div class="item">
-    <%= image_tag '御朱印1.webp', size: "380x380" %>
-    <p>写真キャプション</p>
-        </div>
-
-
-    <div class="item">
-    <%= image_tag '太宰府紫陽花.jpeg', size: "380x380"%>
-    <p>写真キャプション</p>
-        </div>
-
-
-    <div class="item">
-    <%= image_tag '竹林.jpeg', size: "380x380"%>
-    <p>写真キャプション</p>
-    </div>
-
-    <div class="item">
-    <%= image_tag '風鈴.jpeg', size: "380x380"%>
-    <p>写真キャプション</p>
-    </div>
-
-    <div class="item">
-    <%= image_tag '新緑2.jpeg', size: "380x380"%>
-    <p>写真キャプション</p>
-    </div>
-
-    </div>
-
-   
-   
-
+       </div>
 
 </div>
 
