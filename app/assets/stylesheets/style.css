@@ -95,7 +95,7 @@ font-size: 20px;
 .page-title {
   font-size: 50px;
   color: #fff;
-  text-shadow: 0 0 5px rgb(0 0 0 / 90%);
+  text-shadow: 0 0 5px #000;
 
 }
 
