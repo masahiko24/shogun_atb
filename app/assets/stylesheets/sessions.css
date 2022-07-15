@@ -4,7 +4,6 @@
 }
 
 .login-form {
-  /* position: relative; */
   height: 560px;
   width: 410px;
   margin: auto;
@@ -15,7 +14,6 @@
 }
 
 .login-form-left {
-  /* position: relative; */
   height: 560px;
   width: 410px;
   margin: auto;
@@ -60,6 +58,7 @@
 }
 
 .field {
-  font-size: 30px;
+  font-size: 25px;
   color: #000;
 }
+

@@ -10,6 +10,10 @@ a {
 
 /* header */
 
+.nav-main {
+text-align: left;
+    align-items: center;
+}
 
 .head_logo {
   width: 15%;
@@ -18,8 +22,6 @@ a {
 
 .head_logo_sign {
   width: 40%;
-  margin-top: 20px;
-
 }
 
 .top {
@@ -31,13 +33,13 @@ a {
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  text-align: right;
+  align-items: center;
+
 }
 
 .nav-right {
 display: flex;
-font-size: 20px;
-  font-weight: 600;
 }
 
 .nav-left {
@@ -114,7 +116,7 @@ font-size: 20px;
 footer {
   text-align: center;
   font-size: large;
-  background-color: #fff;
+  background-color: #a9a9a9;
 }
 
 /* 投稿アイコン */
@@ -184,10 +186,11 @@ footer {
 } */
 
 .item-img {
-  width: 35vh;
-  height: 35vh;
+  width: 37vh;
+  height: 45vh;
 } 
 
 /* .card__image {
   width: 50%;
 } */
+
