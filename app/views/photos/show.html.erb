@@ -1,9 +1,17 @@
 <div class="container">
+          <%= image_tag @photo.image, class: "item-img" %><br>
+                <%= @photo.title %><br>
+            by  <%= @photo.nickname %>さん<br>
+
+
+
     <% if user_signed_in? %>
       <%= form_with(model: [@photo, @comment], local: true) do |form| %>
-          <%= f.label :comment %><br />
-        <%= form.text_area :text,rows: "2" %>
-        <%= form.submit "SEND" %>
+        <%= form.label :comment %><br />
+        <%= form.text_area :text,rows: "2" %><br>           
+        <div class="actions">
+        <%= form.submit "SEND", class: :form__btn %>
+        </div>
       <% end %>
     <% else %>
       <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
