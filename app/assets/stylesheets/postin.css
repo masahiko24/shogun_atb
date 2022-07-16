@@ -23,3 +23,25 @@
   justify-content: center;
   margin-bottom: 50px;
 }
+
+.form__btn_comment {
+  background-color: #ed1111;
+  color: #FFF;
+  width: 23%;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 150%;
+  height: 50px;
+  border-radius: 20px;
+  margin-top: 15px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+}
+
+
+
+.comments {
+  margin-top: 15px;
+
+}

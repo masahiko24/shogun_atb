@@ -72,8 +72,6 @@ display: flex;
   margin-left: 36px;
   font-size: 15px;
   color: #fff;
-  /* border-radius: 5px; */
-  /* padding: 18px 32px; */
 }
 
 
@@ -91,7 +89,6 @@ display: flex;
 .home-content p {
   font-size: 20px;
   color: #fff;
-  /* margin: 10px 0 42px; */
 }
 
 .page-title {
@@ -100,14 +97,6 @@ display: flex;
   text-shadow: 0 0 5px #000;
 
 }
-
-/* .button {
-  font-size: 20px;
-  color: #505050;
-  border-radius: 5px;
-  padding: 18px 18px;
-  margin-left: 36px;
-} */
 
 .button:hover {
   background-color: #0090aa;
@@ -135,8 +124,7 @@ footer {
 
 /* 一覧二段目 */
 
-
-
+/* 投稿一覧アイコン */
 .room-content {
   margin-top: 5%;
 }
@@ -145,19 +133,9 @@ footer {
   text-align: center;
 }
 
-/* .post-gest p {
-  font-size: 1.125rem;
-  margin-top: 10px 0 0;
-} */
-
-
-/* #room.post-gest {
-  text-transform: none;
-} */
-
-/* .room-content {
-  height: 5vh;
-} */
+.post-image {
+  width: 30%;
+}
 
 .grid {
   display: grid;
@@ -167,30 +145,7 @@ footer {
   margin-bottom: 50px;
 }
 
-/* .item-lists {
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-} */
-/* 
-.item-lists>.list {
-  width: 37vh;
-  padding: 1vw;
-  background-color: #FFF;
-} */
-
-
-/* .item-img-content {
-  position: relative;
-} */
-
 .item-img {
   width: 37vh;
   height: 45vh;
 } 
-
-/* .card__image {
-  width: 50%;
-} */
-

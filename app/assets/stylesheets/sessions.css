@@ -45,13 +45,12 @@
   text-transform: uppercase;
 }
 
-.actions:hover {
+/* .actions:hover {
   background: #4082f5;
   box-shadow: 0px 4px 35px -5px #f540f5;
   cursor: pointer;
   border-radius: 20px;
-
-}
+} */
 
 .actions:focus {
   outline: none;
