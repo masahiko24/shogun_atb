@@ -1,7 +1,10 @@
-<div class="show">
+
+<div class="show wrapper">
+
   <p><%= "#{@user.name}" %>さんの投稿一覧</p>
 
-   <table class="table">
+<%# 
+      <table class="table">
         <tbody>
           <tr>
             <th class="table__col1">名前</th>
@@ -9,36 +12,27 @@
           </tr>
          
         </tbody>
-      </table>
+      </table> 
+      
+     <div class='grid'>
 
+      <% @photos.each do |photo|  %>
+         <div class='item'>
+          <%= link_to photo_path(photo.id), method: :get do %>
+                <%= image_tag photo.image, class: "item-img" %><br>
+                タイトル:  <%= photo.title %><br>
+                メモ:  <%= photo.memo %><br>
+                作成日:  <%= l photo.created_at, format: :short %></td>
+                      <% end %>
 
-
-        <h2 class="page-heading">
-        <%= "#{@user.name}さんのプロトタイプ"%>
-      </h2>
-
-
-  <%# <div class="user__card"> %>
-        <%# 部分テンプレートでそのユーザーが投稿したプロトタイプ投稿一覧を表示する %>
-   <%# <%= render partial: "photos/photo", collection: @photos %> 
-      <%# </div> %>
-     <div class='wrapper grid'>
-     <div class='item'>
-
-    <% @photos.each do |photo|  %>
-      <%= image_tag photo.image, class: "item-img" %><br>
-                <%= photo.nickname %><br>
-                <%= photo.title %><br>
-                <%= photo.memo %><br>
       </div>
       <% end %>
-       </div>
+      </div>
 
-                    
-
-  <%= link_to 'トップページに戻る', root_path %>
-</div>
+  </div>
 
  <%= link_to(new_photo_path, class: 'purchase-btn') do %>
      <span class='purchase-btn-text'>投稿する</span>
+    <%= image_tag('水引2.jpeg' , size: '65x50' ,class: "purchase-btn-icon") %>
+
     <% end %>

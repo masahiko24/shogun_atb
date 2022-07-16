@@ -10,6 +10,10 @@ a {
 
 /* header */
 
+.nav-main {
+text-align: left;
+    align-items: center;
+}
 
 .head_logo {
   width: 15%;
@@ -18,8 +22,6 @@ a {
 
 .head_logo_sign {
   width: 40%;
-  margin-top: 20px;
-
 }
 
 .top {
@@ -31,13 +33,13 @@ a {
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  text-align: right;
+  align-items: center;
+
 }
 
 .nav-right {
 display: flex;
-font-size: 20px;
-  font-weight: 600;
 }
 
 .nav-left {
@@ -70,8 +72,6 @@ font-size: 20px;
   margin-left: 36px;
   font-size: 15px;
   color: #fff;
-  /* border-radius: 5px; */
-  /* padding: 18px 32px; */
 }
 
 
@@ -89,7 +89,6 @@ font-size: 20px;
 .home-content p {
   font-size: 20px;
   color: #fff;
-  /* margin: 10px 0 42px; */
 }
 
 .page-title {
@@ -99,14 +98,6 @@ font-size: 20px;
 
 }
 
-/* .button {
-  font-size: 20px;
-  color: #505050;
-  border-radius: 5px;
-  padding: 18px 18px;
-  margin-left: 36px;
-} */
-
 .button:hover {
   background-color: #0090aa;
 }
@@ -114,7 +105,7 @@ font-size: 20px;
 footer {
   text-align: center;
   font-size: large;
-  background-color: #fff;
+  background-color: #a9a9a9;
 }
 
 /* 投稿アイコン */
@@ -133,8 +124,7 @@ footer {
 
 /* 一覧二段目 */
 
-
-
+/* 投稿一覧アイコン */
 .room-content {
   margin-top: 5%;
 }
@@ -143,19 +133,9 @@ footer {
   text-align: center;
 }
 
-/* .post-gest p {
-  font-size: 1.125rem;
-  margin-top: 10px 0 0;
-} */
-
-
-/* #room.post-gest {
-  text-transform: none;
-} */
-
-/* .room-content {
-  height: 5vh;
-} */
+.post-image {
+  width: 30%;
+}
 
 .grid {
   display: grid;
@@ -165,29 +145,7 @@ footer {
   margin-bottom: 50px;
 }
 
-/* .item-lists {
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-} */
-/* 
-.item-lists>.list {
-  width: 37vh;
-  padding: 1vw;
-  background-color: #FFF;
-} */
-
-
-/* .item-img-content {
-  position: relative;
-} */
-
 .item-img {
-  width: 35vh;
-  height: 35vh;
+  width: 37vh;
+  height: 45vh;
 } 
-
-/* .card__image {
-  width: 50%;
-} */

@@ -1,65 +1,47 @@
-/* ログイン */
-.page-top {
-  margin-bottom: 30px;
-}
-
-.login-form {
-  /* position: relative; */
+.postin-form {
   height: 560px;
   width: 410px;
   margin: auto;
   padding: 60px 60px;
-  background: url(新緑.webp) no-repeat   center center #505050;   
+  background: url(ガーベラ.jpeg) no-repeat   center center #505050;   
   background-size: cover;
   border-radius: 10px;
 }
 
-.login-form-left {
-  /* position: relative; */
+.postin-form-left {
   height: 560px;
   width: 410px;
   margin: auto;
   padding: 60px 60px;
+  background-size: cover;
   box-shadow: 0px 30px 60px -5px #000;
   border-radius: 10px;
 }
 
-
-.login {
+.postin {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.actions .form__btn {
+.form__btn_comment {
   background-color: #ed1111;
   color: #FFF;
-  width: 100%;
+  width: 23%;
   padding: 10px 20px;
-  display: block;
   text-align: center;
   font-size: 150%;
   height: 50px;
   border-radius: 20px;
-  margin-top: 30px;
+  margin-top: 15px;
   transition: all 0.5s ease-in-out;
   border: none;
   text-transform: uppercase;
 }
 
-.actions:hover {
-  background: #4082f5;
-  box-shadow: 0px 4px 35px -5px #f540f5;
-  cursor: pointer;
-  border-radius: 20px;
 
-}
 
-.actions:focus {
-  outline: none;
-}
+.comments {
+  margin-top: 15px;
 
-.field {
-  font-size: 30px;
-  color: #000;
 }

@@ -1,7 +1,9 @@
 <header class="heade wrapper">
         <div class="nav">
-        <%= link_to image_tag('1.png', class:"head_logo"), root_path %>
+                <div class="nav-main">
 
+        <%= link_to image_tag('1.png', class:"head_logo"), root_path %>
+</div>
    <%# <%= link_to image_tag(prototype.image, class: "card__image" ), prototype_path(prototype.id) %>
 
          <% if user_signed_in? %>
@@ -29,4 +31,4 @@
         </div>
         <% end %>
         </div>
-  </header>
+</header>
