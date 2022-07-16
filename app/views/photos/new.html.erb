@@ -1,34 +1,43 @@
-<div class="contents row">
-  <div class="container">
-    <h3>投稿する</h3>
-    <%= form_with(model: @photo, local: true, class:"form-text") do |form| %>
-   <%= render "devise/shared/error_messages", resource: resource %>
+<div class="postin">
 
-    <div class="form-group">
-    <%= form.label :Nickname %>
-      <%= form.text_field :nickname %>
-      </div>
-         <div class="form-group">
-      <%= form.label :Title %>
-      <%= form.text_field :title %>
-            </div>
+    <div class="page-top">
+     <%= form_with model: @photo, local: true do |f| %>
 
-          <div class="form-group">
-      <%= form.label :Image %>
-      <%= form.file_field :image %>
+     <div class="postin-form-left">
+     <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field">
+
+      <%= f.label :Nickname, "ニックネーム" %><br />
+      <%= f.text_field :nickname %>
       </div>
 
-          <div class="form-group">
-    <%= form.label :Memo%>
+    <div class="field">
+      <%= f.label :Title, "タイトル" %><br />
+      <%= f.text_field :title %>
+    </div>
 
-      <%= form.text_area :memo, rows: "10" %>
-          </div>
-          <div class="form-group">
+    <div class="field">
+      <%= f.label :Image, "画像" %><br />
+      <%= f.file_field :image %>
+    </div>
 
-      <%= form.submit "SEND" %>
-          </div>
+    <div class="field">
+      <%= f.label :Memo, "メモ"%><br />
+      <%= f.text_area :memo, rows: "3" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "SEND", class: :form__btn%>
+    </div>
 
     <% end %>
+    </div>
+    </div>
+
+        <div class="page-top">
+        <div class="postin-form">
+    </div>
     </div>
   </div>
 </div>
