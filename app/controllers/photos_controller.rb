@@ -21,7 +21,7 @@ class PhotosController < ApplicationController
   end
 
   def update
-    if@photo.update(photo_params)
+    if @photo.update(photo_params)
       redirect_to root_path, notice: '投稿の更新が完了しました。'
     else
       render :edit
