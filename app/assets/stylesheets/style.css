@@ -134,7 +134,7 @@ footer {
 }
 
 .post-image {
-  width: 30%;
+  width: 25%;
 }
 
 .grid {
@@ -149,3 +149,8 @@ footer {
   width: 37vh;
   height: 45vh;
 } 
+
+.comments {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
