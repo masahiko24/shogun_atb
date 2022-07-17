@@ -30,9 +30,11 @@
        <%= link_to photo_path(photo.id), method: :get do %>
         <div class='items'>
           <%= image_tag photo.image, class: "item-img" %><br>
+          <div class="item-main">
+
                 <%= photo.title %><br>
             by  <%= photo.nickname %>さん<br>
-
+        </div>
         </div>
         <% end %>
         <% end %>

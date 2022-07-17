@@ -5,7 +5,13 @@
                 <%= @photo.title %><br>
             by  <%= @photo.nickname %>さん<br>
 
+      <% if user_signed_in? && current_user.id == @photo.user_id %>
 
+        <div class="prototype__manage">
+          <%= link_to "編集する", edit_photo_path(@photo.id), class: :photo__btn %>
+          <%= link_to "削除する", photo_path(@photo.id),  method: :delete, class: :photo__btn %>
+        </div>
+      <% end %>
 
     <% if user_signed_in? %>
       <%= form_with(model: [@photo, @comment], local: true) do |f| %>

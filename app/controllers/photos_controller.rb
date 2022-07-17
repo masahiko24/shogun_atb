@@ -21,9 +21,7 @@ class PhotosController < ApplicationController
   end
 
   def update
-    @photo.update(photo_params)
-    @photo = Photo.update
-    if @photo.save
+    if@photo.update(photo_params)
       redirect_to root_path, notice: '投稿の更新が完了しました。'
     else
       render :edit
@@ -39,6 +37,8 @@ class PhotosController < ApplicationController
   end
 
   def destroy
+    @photo.destroy
+    redirect_to root_path
   end
 
   private
