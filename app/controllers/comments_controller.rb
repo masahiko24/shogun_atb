@@ -1,13 +1,12 @@
 class CommentsController < ApplicationController
-  
   def create
     @comment = Comment.new(comment_params)
     if @comment.save
-      redirect_to  photo_path(@comment.photo)
+      redirect_to photo_path(@comment.photo)
     else
       @photo = @comment.photo
       @comments = @photo.comments.includes(:user)
-      render template: "photos/show"
+      render template: 'photos/show'
     end
   end
 
