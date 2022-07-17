@@ -1,7 +1,14 @@
 class CommentsController < ApplicationController
+  
   def create
-    Comment.create(comment_params)
-    # redirect_to "/tweets/#{comment.tweet.id}"
+    @comment = Comment.new(comment_params)
+    if @comment.save
+      redirect_to  photo_path(@comment.photo)
+    else
+      @photo = @comment.photo
+      @comments = @photo.comments.includes(:user)
+      render template: "photos/show"
+    end
   end
 
   private
