@@ -65,3 +65,5 @@ gem 'image_processing', '~> 1.2'
 gem 'pry-rails'
 
 gem 'i18n_generators'
+
+gem "aws-sdk-s3", require: false
