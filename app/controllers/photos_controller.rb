@@ -38,7 +38,7 @@ class PhotosController < ApplicationController
 
   def destroy
     @photo.destroy
-    redirect_to root_path
+    redirect_to root_path, notice: '投稿の削除が完了しました。'
   end
 
   private
