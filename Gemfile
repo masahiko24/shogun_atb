@@ -65,3 +65,6 @@ gem 'image_processing', '~> 1.2'
 gem 'pry-rails'
 
 gem 'i18n_generators'
+
+gem 'bootstrap', '~> 4.4.1'
+gem 'jquery-rails'
