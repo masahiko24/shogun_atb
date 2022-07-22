@@ -152,7 +152,12 @@ footer {
 
 .comments {
   font-size: 25px;
-  margin-bottom: 20px;
+}
+
+.comments-main {
+  height: 50%;
+  margin-bottom: 10%;
+
 }
 
 .post-image-mypage {
