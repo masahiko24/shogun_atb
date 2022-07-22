@@ -6,3 +6,10 @@
   height: 700px;
   margin: 50px;
 }
+
+.photo__btn {
+  color: orangered;
+  font-weight: 600;
+  font-size: larger;
+  margin: 10px;
+}
