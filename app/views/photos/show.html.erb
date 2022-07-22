@@ -24,6 +24,9 @@
         <p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p>
       </strong>
     <% end %>
+    </div>
+
+    <div class="comments-main">
     <div class="comments">
       <%= image_tag('コメント一覧.png', class: "post-image") %>
       <% @comments.each do |comment| %>
@@ -35,3 +38,4 @@
     </div>
   </div>
 </div>
+
