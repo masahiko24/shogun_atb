@@ -3,14 +3,7 @@
     <div class="table">
       <%= "#{@user.name}" %>さんの投稿一覧
     </div>
-    <%# 
-        <tbody>
-          <tr>
-            <th class="table__col1">名前</th>
-            <td class="table__col2"><%= @user.name %></td>
-</tr>
-</tbody>
-</table>
+</div>
 <div class='grid'>
   <% @photos.each do |photo|  %>
     <div class='item'>
@@ -24,6 +17,8 @@
     <% end %>
   </div>
 <% end %>
+</div>
+
 <% if @photos[0] == nil %>
   <div class='list'>
     <%= link_to(new_photo_path) do %>
@@ -35,6 +30,5 @@
 </div>
 <% end %>
 </div>
-</div>
-</div>
+
 <%= render partial: "photos/postin"%>
