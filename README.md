@@ -4,7 +4,7 @@
 # shogun-authorized trading book 略：SATB
 
 アプリケーション概要  
-## 誰でも簡単に画像が投稿できる  
+## 登録が簡単で誰でも画像やコメントが投稿できる。 
 
 URL  
 ---
@@ -24,10 +24,10 @@ https://shogunatb.herokuapp.com/
 1. 投稿するボタンから内容（写真、タイトル、コメント）を入力し投稿する。  
 
 ### コメントする  
-1. 一覧ページから気に入った写真にコメントする。  
+1. 一覧ページから気に入った写真の詳細ページに遷移しコメントする。  
 
 ### お気に入りを見つける
-1. 気に入った投稿に「いいね」する。
+1. 気に入った投稿に「いいね」する。（追加実装予定）
 
 アプリケーションを作成した背景  
 ---
@@ -43,13 +43,17 @@ https://docs.google.com/spreadsheets/d/1FK8oeyrRVcgyHEPr_Z045k9Lila6QUdsoR76Ko-h
 実装した機能について  
 ---
 TOPページ
-[![Image from Gyazo](https://i.gyazo.com/6acf5fd3ec6a9e110c860fb51c30b9ee.gif)](https://gyazo.com/6acf5fd3ec6a9e110c860fb51c30b9ee)  
-
-ログインページ
-[![Image from Gyazo](https://i.gyazo.com/8440f6056f78d7b176f53002759cd493.jpg)](https://gyazo.com/8440f6056f78d7b176f53002759cd493)
+[![Image from Gyazo](https://i.gyazo.com/4d5328be114391514e7fcc6c5028f809.gif)](https://gyazo.com/4d5328be114391514e7fcc6c5028f809)
 
 新規登録ページ
-[![Image from Gyazo](https://i.gyazo.com/1e145d316718819fd2048dbe7e20824d.jpg)](https://gyazo.com/1e145d316718819fd2048dbe7e20824d)
+[![Image from Gyazo](https://i.gyazo.com/7134c4f8b15e1efac41915683cad79b1.jpg)](https://gyazo.com/7134c4f8b15e1efac41915683cad79b1)
+
+ログインページ
+[![Image from Gyazo](https://i.gyazo.com/4c5be6ca40bdea5a09f05755c2d500dc.jpg)](https://gyazo.com/4c5be6ca40bdea5a09f05755c2d500dc)
+
+コメント投稿
+[![Image from Gyazo](https://i.gyazo.com/5f5cd1c718d332f1311afafa6483d88a.gif)](https://gyazo.com/5f5cd1c718d332f1311afafa6483d88a)
+
 
 
 実装予定の機能  
@@ -73,3 +77,5 @@ Ruby,Ruby on Rails,HTML,CSS
 ---
 1. 極力無駄を省き必要最低限の情報だけで登録できる。  
 1. Topページ、ログインページ、新規登録ページ、投稿ページを単調にならないように、使用する人が見て好印象を持てるように作り込んだ。  
+1. 縁起が良いものを使うように紅白や明るい色を基調として各種ボタンを自作した。
+1. ボタンなどの文字を大きく作成した。
