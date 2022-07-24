@@ -24,9 +24,8 @@
         <p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p>
       </strong>
     <% end %>
-    </div>
-
-    <div class="comments-main">
+  </div>
+  <div class="comments-main">
     <div class="comments">
       <%= image_tag('コメント一覧.png', class: "post-image") %>
       <% @comments.each do |comment| %>
@@ -35,7 +34,10 @@
           <%= comment.text %>
         </p>
       <% end %>
+
+      <% if current_user.id == @comment.user_id %>
+        <%= link_to "削除する", photo_comment_path(@photo.id,@comments),  method: :delete, class: :photo__btn %>
+      <%end%>
     </div>
   </div>
 </div>
-
