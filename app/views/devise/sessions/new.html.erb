@@ -1,36 +1,25 @@
 <div class="login">
-
   <div class="page-top">
     <%= form_with model: @user, url: user_session_path, local: true do |f| %>
-
-    <div class="login-form-left">
-    <%= render "devise/shared/error_messages", resource: resource %>
-
-    <div class="field">
-      <%= f.label :email, "メールアドレス"%><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      <div class="login-form-left">
+        <%= render "devise/shared/error_messages", resource: resource %>
+        <div class="field">
+          <%= f.label :email, "メールアドレス"%><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        </div>
+        <div class="field">
+          <%= f.label :password, "パスワード" %><br />
+          <%= f.password_field :password, autocomplete: "current-password" %>
+        </div>
+        <div class="actions">
+          <%= f.submit "Log in", class: :form__btn %>
+        </div>
+      <% end %>
     </div>
-
-    <div class="field">
-      <%= f.label :password, "パスワード" %><br />
-      <%= f.password_field :password, autocomplete: "current-password" %>
-    </div>
-
-    <div class="actions">
-      <%= f.submit "Log in", class: :form__btn %>
-    </div>
-    
-  <% end %>
   </div>
-  </div>
-
   <div class="page-top">
-  <div class="login-form">
-
-
+    <div class="login-form">
+    </div>
+  </div>
 </div>
 </div>
-</div>
-</div>
-
-

@@ -1,14 +1,11 @@
 <div class="card">
   <%= link_to image_tag(@photo.image, class: :card__image ), photo_path(@photo.id),size: "280x280"%>
-  
- 
   <div class="card__body">
-  作成者のページ
+    作成者のページ
     <%= link_to @photo.title, photo_path(@photo.id), method: :get, class: :card__title%>
     <p class="card__summary">
       <%= @photo.memo %>
     </p>
     <%= link_to @photo.user.name, user_path(@photo.user_id), class: :card__user %>
- 
   </div>
 </div>

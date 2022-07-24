@@ -2,3 +2,13 @@
   text-align: center;
 }
 
+.container-main {
+  margin: 20px;
+}
+
+.photo__btn {
+  color: orangered;
+  font-weight: 600;
+  font-size: larger;
+  margin: 10px;
+}

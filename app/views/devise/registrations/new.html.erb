@@ -1,46 +1,37 @@
 <%# <h2>Sign up</h2> %>
 <div class="signup">
-<div id="signup-page" class="big-bg-sign">
-<div class="page-top">
-
- <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
-
-  <div class="signup-form">
-  <%= render "devise/shared/error_messages", resource: resource %>
- 
-  <div class="field">
-    <%= f.label :name, "名前" %><br />
-    <%= f.text_field :name, autofocus: true %>
+  <div id="signup-page" class="big-bg-sign">
+    <div class="page-top">
+      <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
+        <div class="signup-form">
+          <%= render "devise/shared/error_messages", resource: resource %>
+          <div class="field">
+            <%= f.label :name, "名前" %><br />
+            <%= f.text_field :name, autofocus: true %>
+          </div>
+          <div class="field">
+            <%= f.label :email, "メールアドレス" %><br />
+            <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+          </div>
+          <div class="field">
+            <%= f.label :password, "パスワード" %>
+            <% if @minimum_password_length %>
+              <em>(<%= @minimum_password_length %> 文字以上)</em>
+            <% end %><br />
+            <%= f.password_field :password, autocomplete: "new-password" %>
+          </div>
+          <div class="field">
+            <%= f.label :password_confirmation, "確認パスワード（6 文字以上）" %><br />
+            <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+          </div>
+          <div class="actions">
+            <%= f.submit "Sign up", class: :form__btn %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="page-top">
+      <div class="signup-main">
+      </div>
+    </div>
   </div>
-
-  <div class="field">
-    <%= f.label :email, "メールアドレス" %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password, "パスワード" %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> 文字以上)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation, "確認パスワード（6 文字以上）" %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up", class: :form__btn %>
-  </div>
-<% end %>
-</div>
-</div>
-
-<div class="page-top">
-  <div class="signup-main">
-  </div>
-  </div>
-</div>
-

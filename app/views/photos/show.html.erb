@@ -1,35 +1,31 @@
-
-
 <div class="container wrapper">
-          <%= image_tag @photo.image, class: "item-img" %><br>
-                <%= @photo.title %><br>
-            by  <%= @photo.nickname %>さん<br>
-
-      <% if user_signed_in? && current_user.id == @photo.user_id %>
-
-        <div class="prototype__manage">
-          <%= link_to "編集する", edit_photo_path(@photo.id), class: :photo__btn %>
-          <%= link_to "削除する", photo_path(@photo.id),  method: :delete, class: :photo__btn %>
-        </div>
-      <% end %>
-
+  <div class="container-main">
+    <%= image_tag @photo.image, class: "item-img" %><br>
+    <%= @photo.title %><br>
+    by  <%= @photo.nickname %>さん<br>
+    <% if user_signed_in? && current_user.id == @photo.user_id %>
+      <div class="photo__manage">
+        <%= link_to "編集する", edit_photo_path(@photo.id), class: :photo__btn %>/
+        <%= link_to "削除する", photo_path(@photo.id),  method: :delete, class: :photo__btn %>
+      </div>
+    <% end %>
     <% if user_signed_in? %>
       <%= form_with(model: [@photo, @comment], local: true) do |f| %>
-        
         <div class="field">
-        <%= f.label :comment, "コメント投稿" %><br />
-        <%= f.text_area :text,rows: "2" %><br>           
+          <%= f.label :comment, "コメント投稿" %><br />
+          <%= f.text_area :text,rows: "2" %><br>
         </div>
-
         <div class="actions-comment">
-        <%= f.submit "SEND", class: :form__btn_comment %>
+          <%= f.submit "SEND", class: :form__btn_comment %>
         </div>
-      
       <% end %>
     <% else %>
-      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+      <strong>
+        <p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p>
+      </strong>
     <% end %>
-
+  </div>
+  <div class="comments-main">
     <div class="comments">
       <%= image_tag('コメント一覧.png', class: "post-image") %>
       <% @comments.each do |comment| %>
@@ -38,5 +34,10 @@
           <%= comment.text %>
         </p>
       <% end %>
+
+      <% if current_user.id == @comment.user_id %>
+        <%= link_to "削除する", photo_comment_path(@photo.id,@comments),  method: :delete, class: :photo__btn %>
+      <%end%>
     </div>
   </div>
+</div>

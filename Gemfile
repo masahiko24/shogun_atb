@@ -66,4 +66,6 @@ gem 'pry-rails'
 
 gem 'i18n_generators'
 
+gem 'bootstrap', '~> 4.4.1'
+gem 'jquery-rails'
 gem "aws-sdk-s3", require: false
