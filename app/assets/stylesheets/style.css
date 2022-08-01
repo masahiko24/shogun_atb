@@ -161,5 +161,6 @@ footer {
 }
 
 .post-image-mypage {
-  width: 100%;
+  width: 40%;
+  margin-bottom: 50px;
 }
