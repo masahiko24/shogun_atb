@@ -167,3 +167,8 @@ footer {
 .show {
   margin-bottom: 9.5%;
 }
+
+.purchase-btn-text {
+  font-size: large;
+  color: #000;
+}
