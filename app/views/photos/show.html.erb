@@ -37,7 +37,7 @@
 
       <% if current_user.id == @comment.user_id %>
         <%= link_to "削除する", photo_comment_path(@photo.id,@comments),  method: :delete, class: :photo__btn %>
-      <%end%>
+      <% end %>
     </div>
   </div>
 </div>
