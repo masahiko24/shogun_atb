@@ -6,8 +6,10 @@ class User < ApplicationRecord
 
   has_many :photos, dependent: :destroy
   has_many :comments, dependent: :destroy
+  has_many :favarites, dependent: :destroy
 
   validates :name, presence: true
   validates :email, presence: true
   validates :password, presence: true
+  
 end
