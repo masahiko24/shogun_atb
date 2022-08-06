@@ -10,8 +10,4 @@ class Photo < ApplicationRecord
   validates :memo, presence: true
   validates :image, presence: true
   
-  
-  def favarited?(user)
-    favarites.where(user_id: user.id).exists?
-  end
 end
