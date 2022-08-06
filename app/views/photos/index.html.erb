@@ -25,17 +25,7 @@
             by  <%= photo.nickname %>さん<br>
           </div>
         </div>
-        <% if @photo.favarite?(current_user) %>
-          # 一致するレコードが存在する＝すでにいいね済みの場合はdestroyアクションへ
-          <%= link_to photo_favarite_path(@photo.id), method: :delete do %>
-            <span style="color:red;">❤︎</span>
-          <% end %>
-        <% else %>
-          # 一致するレコードが存在しない＝まだいいねしていない場合はcreateアクションへ
-          <%= link_to photo_favarites_path(@photo.id), method: :post do %>
-            <span>❤︎</span>
-          <% end %>
-        <% end %>
+      
       <% end %>
     <% end %>
   </div>
