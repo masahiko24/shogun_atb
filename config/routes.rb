@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: 'photos#index'
   resources :photos do
     resources :comments, only: [:create, :destroy]
+    resource :favarites, only: [:create, :destroy]
   end
 
   resources :users
