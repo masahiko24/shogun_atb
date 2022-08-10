@@ -142,9 +142,10 @@ footer {
 }
 
 .grid {
-  display: grid;
-  gap: 26px;
-  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
   margin-top: 6%;
   margin-bottom: 50px;
 }
@@ -172,3 +173,6 @@ footer {
   margin-bottom: 9.5%;
 }
 
+.items {
+  margin-bottom: 15px;
+}

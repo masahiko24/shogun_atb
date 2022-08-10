@@ -1,15 +1,15 @@
 class FavaritesController < ApplicationController
 
-def create
-  @photo_favarite = Favarite.new(user_id: current_user.id, post_id: params[:post_id])
-  @photo_favarite.save
-  redirect_to photo_path(params[:photo_id]) 
-end
+  def create
+    @favarite = current_user.favarites.create(photo_id: params[:photo_id])
+    redirect_back(fallback_location: root_path)
+  end
 
-def destroy
-  @photo_favarite = Favarite.find_by(user_id: current_user.id, post_id: params[:post_id])
-  @photo_favarite.destroy
-  redirect_to photo_path(params[:photo_id]) 
-end
+  def destroy
+    @photo = Photo.find(params[:photo_id])
+    @favarite = current_user.favarites.find_by(photo_id: @photo.id)
+    @favarite.destroy
+    redirect_back(fallback_location: root_path)
+  end
 end
 
