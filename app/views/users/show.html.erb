@@ -15,7 +15,7 @@
             作成日:  <%= l photo.created_at, format: :short %></td>
         </div>
         <% if current_user.already_favarited?(photo) %>
-          <%= link_to photo_favarites_path(photo), method: :delete do %>
+          <%= link_to photo_favarite_path(photo), method: :delete do %>
             <i class="fas fa-heart"></i>
             <span style="color:red;">❤︎</span>
           <% end %>
