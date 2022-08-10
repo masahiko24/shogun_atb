@@ -42,10 +42,12 @@ ActiveRecord::Schema.define(version: 2022_08_05_080841) do
   end
 
   create_table "favarites", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "photo_id"
+    t.bigint "user_id", null: false
+    t.bigint "photo_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["photo_id"], name: "index_favarites_on_photo_id"
+    t.index ["user_id"], name: "index_favarites_on_user_id"
   end
 
   create_table "photos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -72,5 +74,7 @@ ActiveRecord::Schema.define(version: 2022_08_05_080841) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "favarites", "photos"
+  add_foreign_key "favarites", "users"
   add_foreign_key "photos", "users"
 end
