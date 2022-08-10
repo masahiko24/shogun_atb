@@ -105,7 +105,7 @@ display: flex;
 footer {
   text-align: center;
   font-size: large;
-  background-color: #a9a9a9;
+  background-color: #f705d3;
 }
 
 /* 投稿アイコン */
@@ -121,6 +121,10 @@ footer {
       padding: 15px;
   }
 
+  .purchase-btn-text {
+    font-size: large;
+    color: #000;
+  }
 
 /* 一覧二段目 */
 
@@ -138,9 +142,10 @@ footer {
 }
 
 .grid {
-  display: grid;
-  gap: 26px;
-  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
   margin-top: 6%;
   margin-bottom: 50px;
 }
@@ -161,5 +166,13 @@ footer {
 }
 
 .post-image-mypage {
-  width: 100%;
+  width: 40%;
+}
+
+.show {
+  margin-bottom: 9.5%;
+}
+
+.items {
+  margin-bottom: 15px;
 }

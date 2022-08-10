@@ -43,7 +43,7 @@ https://docs.google.com/spreadsheets/d/1FK8oeyrRVcgyHEPr_Z045k9Lila6QUdsoR76Ko-h
 実装した機能について  
 ---
 TOPページ
-[![Image from Gyazo](https://i.gyazo.com/4d5328be114391514e7fcc6c5028f809.gif)](https://gyazo.com/4d5328be114391514e7fcc6c5028f809)
+[![Image from Gyazo](https://i.gyazo.com/b48a3840fdd5137c445363490aab3e11.gif)](https://gyazo.com/b48a3840fdd5137c445363490aab3e11)
 
 新規登録ページ
 [![Image from Gyazo](https://i.gyazo.com/7134c4f8b15e1efac41915683cad79b1.jpg)](https://gyazo.com/7134c4f8b15e1efac41915683cad79b1)
@@ -52,7 +52,7 @@ TOPページ
 [![Image from Gyazo](https://i.gyazo.com/4c5be6ca40bdea5a09f05755c2d500dc.jpg)](https://gyazo.com/4c5be6ca40bdea5a09f05755c2d500dc)
 
 コメント投稿
-[![Image from Gyazo](https://i.gyazo.com/5f5cd1c718d332f1311afafa6483d88a.gif)](https://gyazo.com/5f5cd1c718d332f1311afafa6483d88a)
+[![Image from Gyazo](https://i.gyazo.com/8fb6d2e34c79935f5a9991d97548fe40.gif)](https://gyazo.com/8fb6d2e34c79935f5a9991d97548fe40)
 
 
 
