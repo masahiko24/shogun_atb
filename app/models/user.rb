@@ -12,7 +12,9 @@ class User < ApplicationRecord
   validates :email, presence: true
   validates :password, presence: true
 
-  def favarited?(photo)
-    favarites.where(user_id: user.id).exists?
+
+  def already_favarited?(photo)
+    self.favarites.exists?(photo_id: photo.id)
   end
+  
 end
