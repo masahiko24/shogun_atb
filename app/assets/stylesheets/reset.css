@@ -19,6 +19,7 @@ html{
   TODO test putting a class on HEAD.
       - Fails on FF.
 */
+a,
 body,
 div,
 dl,
