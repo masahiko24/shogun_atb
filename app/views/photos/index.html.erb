@@ -24,18 +24,6 @@
             <%= photo.title %><br>
             by  <%= photo.nickname %>さん<br>
           </div>
-        
-         <% if current_user.already_favarited?(photo) %>
-            <%= link_to photo_favarite_path(photo, photo.id), method: :delete do %>
-              <span style="color:red;">❤︎</span>
-            <% end %>
-            <%= photo.favarites.count %>
-          <% else %>
-            <%= link_to photo_favarites_path(photo, photo.id), method: :post do %>
-              <span>❤︎</span>
-            <% end %>
-            <%= photo.favarites.count %>
-          <% end %>
           <% end %>
         </div>
     <% end %>

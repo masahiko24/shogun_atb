@@ -144,7 +144,7 @@ footer {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-content: space-between;
   margin-top: 6%;
   margin-bottom: 50px;
@@ -174,5 +174,5 @@ footer {
 }
 
 .items {
-  margin-bottom: 15px;
+  margin: 13px;
 }

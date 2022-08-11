@@ -6,7 +6,7 @@
   </div>
   <div class='grid'>
     <% @photos.each do |photo|  %>
-      <div class='item'>
+      <div class='items'>
         <%= link_to photo_path(photo.id), method: :get do %>
           <%= image_tag photo.image, class: "item-img" %><br>
           <div class="item-main">
