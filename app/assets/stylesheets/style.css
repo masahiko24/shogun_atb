@@ -142,18 +142,10 @@ footer {
 }
 
 .grid {
-<<<<<<< Updated upstream
-  display: grid;
-  gap: 26px;
-  grid-template-columns: 1fr 1fr 1fr 1fr ;
-  margin-top: 6%;
-  margin-bottom: 50px;
-=======
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: 30px 0px;
->>>>>>> Stashed changes
 }
 
 .item-img {
@@ -179,8 +171,6 @@ footer {
   margin-bottom: 9.5%;
 }
 
-<<<<<<< Updated upstream
-=======
 .items {
   margin: 13px;
 }
@@ -189,4 +179,3 @@ footer {
   color: #f705d3;
 font-weight: 500;
 }
->>>>>>> Stashed changes
