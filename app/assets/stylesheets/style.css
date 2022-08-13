@@ -1,8 +1,8 @@
 @charset "UTF-8";
-/* 
+
 h1 {
   font-size: 40px;
-} */
+} 
 
 a {
   text-decoration: none;
@@ -145,9 +145,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-content: space-between;
-  margin-top: 6%;
-  margin-bottom: 50px;
+  margin: 30px 0px;
 }
 
 .item-img {
@@ -176,3 +174,9 @@ footer {
 .items {
   margin: 13px;
 }
+
+.item-count {
+  color: #f705d3;
+font-weight: 500;
+}
+

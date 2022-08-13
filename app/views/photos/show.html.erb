@@ -11,6 +11,7 @@
     <% end %>
     <% if user_signed_in? %>
       <%= form_with(model: [@photo, @comment], local: true) do |f| %>
+        <%= render partial: "favarites" %>
         <div class="field">
           <%= f.label :comment, "コメント投稿" %><br />
           <%= f.text_area :text,rows: "2" %><br>
@@ -36,4 +37,8 @@
       <% end %>
     </div>
   </div>
+<h2>いいねしたユーザー</h2>
+<% @photo.favarited_users.each do |user| %>
+  <li><%= user.name %></li>
+<% end %>
 </div>

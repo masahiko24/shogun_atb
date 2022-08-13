@@ -30,7 +30,20 @@
       <% end %>
     </div>
   <% end %>
-</div>
+  </div>
+
+  <h3>いいねしている投稿</h3>
+  <div class="grid">
+    <% @user.favarited_photos.each do |photo| %>
+      <%= link_to photo_path(photo.id), method: :get do %>
+        <div class="like">
+          <%= image_tag photo.image, class: "item-img-show" %><br>
+          ユーザー名：<%= photo.user.name %>さん<br>
+          タイトル：<%= photo.title%><br>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
 <% if @photos[0] == nil %>
   <div class='list'>
     <%= link_to(new_photo_path) do %>

@@ -1,0 +1,11 @@
+ <% if current_user.already_favarited?(@photo) %>
+  <%= link_to photo_favarite_path(@photo), method: :delete do %>
+    <span style="color:red;">いいね❤︎</span>
+  <% end %>
+  <%= @photo.favarites.count %>
+<% else %>
+  <%= link_to photo_favarites_path(@photo), method: :post do %>
+    <span>いいね❤︎</span>
+  <% end %>
+  <%= @photo.favarites.count %>
+<% end %>

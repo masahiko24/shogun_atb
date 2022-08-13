@@ -31,6 +31,7 @@ class PhotosController < ApplicationController
   def show
     @comment = Comment.new
     @comments = @photo.comments.includes(:user)
+    @favarite = Favarite.new
   end
 
   def edit

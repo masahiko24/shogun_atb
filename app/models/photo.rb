@@ -2,6 +2,7 @@ class Photo < ApplicationRecord
   belongs_to :user
   has_many :comments, dependent: :destroy
   has_many :favarites, dependent: :destroy
+  has_many :favarited_users, through: :favarites, source: :user
 
   has_one_attached :image
 

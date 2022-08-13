@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     resources :favarites, only: [:create, :destroy]
   end
 
-  resources :users
+  resources :users, only: [:index, :show]
 
 end
 
