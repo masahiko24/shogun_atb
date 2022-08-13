@@ -23,10 +23,13 @@
           <div class="item-main">
             <%= photo.title %><br>
             by  <%= photo.nickname %>さん<br>
-          </div>
+          <div class="item-count">
+            いいねカウント<%= photo.favarites.count %> 
+            </div>
         </div>
-      <% end %>
     <% end %>
+    </div>
+  <% end %>
   </div>
 </div>
 <%= render partial: "postin"%>
