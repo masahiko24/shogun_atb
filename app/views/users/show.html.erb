@@ -3,22 +3,47 @@
     <div class="table">
       <%= "#{@user.name}" %>さんの投稿一覧
     </div>
-</div>
-<div class='grid'>
-  <% @photos.each do |photo|  %>
-    <div class='item'>
+  </div>
+  <div class='grid'>
+    <% @photos.each do |photo|  %>
+      <div class='items'>
+        <%= link_to photo_path(photo.id), method: :get do %>
+          <%= image_tag photo.image, class: "item-img" %><br>
+          <div class="item-main">
+            タイトル:  <%= photo.title %><br>
+            メモ:  <%= photo.memo %><br>
+            作成日:  <%= l photo.created_at, format: :short %></td>
+        </div>
+        <% if current_user.already_favarited?(photo) %>
+          <%= link_to photo_favarite_path(photo), method: :delete do %>
+            <i class="fas fa-heart"></i>
+            <span style="color:red;">❤︎</span>
+          <% end %>
+          <%= photo.favarites.count %>
+        <% else %>
+          <%= link_to photo_favarites_path(photo), method: :post do %>
+            <i class="far fa-heart"></i>
+            <span>❤︎</span>
+          <% end %>
+          <%= photo.favarites.count %>
+        <% end %>
+      <% end %>
+    </div>
+  <% end %>
+  </div>
+
+  <h3>いいねしている投稿</h3>
+  <div class="grid">
+    <% @user.favarited_photos.each do |photo| %>
       <%= link_to photo_path(photo.id), method: :get do %>
-        <%= image_tag photo.image, class: "item-img" %><br>
-        <div class="item-main">
-          タイトル:  <%= photo.title %><br>
-          メモ:  <%= photo.memo %><br>
-          作成日:  <%= l photo.created_at, format: :short %></td>
-      </div>
+        <div class="like">
+          <%= image_tag photo.image, class: "item-img-show" %><br>
+          ユーザー名：<%= photo.user.name %>さん<br>
+          タイトル：<%= photo.title%><br>
+        </div>
+      <% end %>
     <% end %>
   </div>
-<% end %>
-</div>
-
 <% if @photos[0] == nil %>
   <div class='list'>
     <%= link_to(new_photo_path) do %>
@@ -30,5 +55,4 @@
 </div>
 <% end %>
 </div>
-
 <%= render partial: "photos/postin"%>
