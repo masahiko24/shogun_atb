@@ -10,4 +10,6 @@ class Photo < ApplicationRecord
   validates :title, presence: true
   validates :memo, presence: true
   validates :image, presence: true
+  
+  
 end

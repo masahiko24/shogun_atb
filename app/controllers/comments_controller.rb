@@ -1,8 +1,6 @@
 class CommentsController < ApplicationController
   # before_action :set_comment, only: [:destroy]
 
-
-
   def create
     @comment = Comment.new(comment_params)
     if @comment.save
@@ -19,7 +17,6 @@ class CommentsController < ApplicationController
     @comments.destroy
     redirect_to photo_path(@comment.photo)
   end
-
 
   private
 
