@@ -1,4 +1,5 @@
 class FavaritesController < ApplicationController
+
   def create
     @favarite = current_user.favarites.create(photo_id: params[:photo_id])
     redirect_back(fallback_location: root_path)
@@ -10,3 +11,4 @@ class FavaritesController < ApplicationController
     redirect_back(fallback_location: root_path)
   end
 end
+
