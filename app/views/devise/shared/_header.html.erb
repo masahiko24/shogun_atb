@@ -5,13 +5,13 @@
     </div>
     <% if user_signed_in? %>
       <div class="nav-sub">
-          <%= link_to image_tag('4.png', class:"head_logo_sign"),  "/users/#{current_user.id}"%></li>
-          <%= link_to image_tag('5.png', class:"head_logo_sign"), destroy_user_session_path, method: :delete %></li>
+          <%= link_to image_tag('4.png', class:"head_logo_sign"),  "/users/#{current_user.id}"%>
+          <%= link_to image_tag('5.png', class:"head_logo_sign"), destroy_user_session_path, method: :delete %>
       </div>
     <% else %>
       <div class="nav-sub">
-          <%= link_to image_tag('3.png', class:"head_logo_sign"), new_user_registration_path %></li>
-          <%= link_to image_tag('2.png', class:"head_logo_sign"), new_user_session_path %></li>
+          <%= link_to image_tag('3.png', class:"head_logo_sign"), new_user_registration_path %>
+          <%= link_to image_tag('2.png', class:"head_logo_sign"), new_user_session_path %>
       </div>
     <% end %>
   </div>
