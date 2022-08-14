@@ -10,18 +10,26 @@ a {
 
 /* header */
 
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav-main {
-text-align: left;
-    align-items: center;
+  float: left;
+  margin:15px 0px 5px 0px;
+}
+
+.nav-sub {
+  text-align: right;
 }
 
 .head_logo {
-  width: 15%;
-  margin: 20px 0 10px 50px;
+  width: 17%
 }
 
 .head_logo_sign {
-  width: 40%;
+  width: 20%;
 }
 
 .top {
@@ -30,23 +38,6 @@ text-align: left;
   color: #f000;
   
 }
-
-.nav {
-  display: flex;
-  text-align: right;
-  align-items: center;
-
-}
-
-.nav-right {
-display: flex;
-}
-
-.nav-left {
-  display: flex;
-  }
-
-
 
 .big-bg {
   background-size: cover;
