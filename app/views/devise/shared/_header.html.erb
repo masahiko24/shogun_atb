@@ -3,25 +3,16 @@
     <div class="nav-main">
       <%= link_to image_tag('1.png', class:"head_logo"), root_path %>
     </div>
-    <%# <%= link_to image_tag(prototype.image, class: "card__image" ), prototype_path(prototype.id) %>
     <% if user_signed_in? %>
-      <div class="nav-right">
-        <div class="nav-left-center">
+      <div class="nav-sub">
           <%= link_to image_tag('4.png', class:"head_logo_sign"),  "/users/#{current_user.id}"%></li>
+          <%= link_to image_tag('5.png', class:"head_logo_sign"), destroy_user_session_path, method: :delete %></li>
       </div>
-      <div class="nav-left-sub-right">
-        <%= link_to image_tag('5.png', class:"head_logo_sign"), destroy_user_session_path, method: :delete %></li>
-    </div>
+    <% else %>
+      <div class="nav-sub">
+          <%= link_to image_tag('3.png', class:"head_logo_sign"), new_user_registration_path %></li>
+          <%= link_to image_tag('2.png', class:"head_logo_sign"), new_user_session_path %></li>
+      </div>
+    <% end %>
   </div>
-<% else %>
-  <div class="nav-left">
-    <div class="nav-left-center">
-      <%= link_to image_tag('3.png', class:"head_logo_sign"), new_user_registration_path %></li>
-  </div>
-  <div class="nav-left-sub-right">
-    <%= link_to image_tag('2.png', class:"head_logo_sign"), new_user_session_path %></li>
-</div>
-</div>
-<% end %>
-</div>
 </header>
