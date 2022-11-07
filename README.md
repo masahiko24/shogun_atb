@@ -42,8 +42,9 @@ https://docs.google.com/spreadsheets/d/1FK8oeyrRVcgyHEPr_Z045k9Lila6QUdsoR76Ko-h
 
 実装した機能について  
 ---
+
 TOPページ
-[![Image from Gyazo](https://i.gyazo.com/5caca6eba1593714052596d96252fb38.gif)](https://gyazo.com/5caca6eba1593714052596d96252fb38)
+[![Image from Gyazo](https://i.gyazo.com/698a11e63312c4df034cb9850e1d7e2f.jpg)](https://gyazo.com/698a11e63312c4df034cb9850e1d7e2f)
 
 新規登録ページ
 [![Image from Gyazo](https://i.gyazo.com/bbfa5e29d153702486f52c1962db0c01.jpg)](https://gyazo.com/bbfa5e29d153702486f52c1962db0c01)
@@ -54,11 +55,6 @@ TOPページ
 コメント投稿
 [![Image from Gyazo](https://i.gyazo.com/8fb6d2e34c79935f5a9991d97548fe40.gif)](https://gyazo.com/8fb6d2e34c79935f5a9991d97548fe40)
 
-
-実装予定の機能  
----
- 1. 携帯電話でも表示する様にする  
- 1. いいね機能の実装
 
 データベース設計  
 ---
@@ -78,3 +74,5 @@ Ruby,Ruby on Rails,HTML,CSS
 1. Topページ、ログインページ、新規登録ページ、投稿ページを単調にならないように、使用する人が見て好印象を持てるように作り込んだ。  
 1. 縁起が良いものを使うように紅白や明るい色を基調として各種ボタンを自作した。
 1. ボタンなどの文字を大きく作成した。
+
+[def]: https://gyazo.com/5caca6eba1593714052596d96252fb38
