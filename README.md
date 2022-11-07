@@ -43,13 +43,13 @@ https://docs.google.com/spreadsheets/d/1FK8oeyrRVcgyHEPr_Z045k9Lila6QUdsoR76Ko-h
 実装した機能について  
 ---
 TOPページ
-[![Image from Gyazo](https://i.gyazo.com/4d5328be114391514e7fcc6c5028f809.gif)](https://gyazo.com/4d5328be114391514e7fcc6c5028f809)
+[![Image from Gyazo](https://i.gyazo.com/5caca6eba1593714052596d96252fb38.gif)](https://gyazo.com/5caca6eba1593714052596d96252fb38)
 
 新規登録ページ
-[![Image from Gyazo](https://i.gyazo.com/7134c4f8b15e1efac41915683cad79b1.jpg)](https://gyazo.com/7134c4f8b15e1efac41915683cad79b1)
+[![Image from Gyazo](https://i.gyazo.com/bbfa5e29d153702486f52c1962db0c01.jpg)](https://gyazo.com/bbfa5e29d153702486f52c1962db0c01)
 
 ログインページ
-[![Image from Gyazo](https://i.gyazo.com/4c5be6ca40bdea5a09f05755c2d500dc.jpg)](https://gyazo.com/4c5be6ca40bdea5a09f05755c2d500dc)
+[![Image from Gyazo](https://i.gyazo.com/eeb27c507edd6c6768a2dfe7f6b0812a.jpg)](https://gyazo.com/eeb27c507edd6c6768a2dfe7f6b0812a)
 
 コメント投稿
 [![Image from Gyazo](https://i.gyazo.com/5f5cd1c718d332f1311afafa6483d88a.gif)](https://gyazo.com/5f5cd1c718d332f1311afafa6483d88a)
