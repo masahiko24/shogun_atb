@@ -52,8 +52,7 @@ TOPページ
 [![Image from Gyazo](https://i.gyazo.com/eeb27c507edd6c6768a2dfe7f6b0812a.jpg)](https://gyazo.com/eeb27c507edd6c6768a2dfe7f6b0812a)
 
 コメント投稿
-[![Image from Gyazo](https://i.gyazo.com/5f5cd1c718d332f1311afafa6483d88a.gif)](https://gyazo.com/5f5cd1c718d332f1311afafa6483d88a)
-
+[![Image from Gyazo](https://i.gyazo.com/8fb6d2e34c79935f5a9991d97548fe40.gif)](https://gyazo.com/8fb6d2e34c79935f5a9991d97548fe40)
 
 
 実装予定の機能  

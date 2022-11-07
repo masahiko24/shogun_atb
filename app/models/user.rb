@@ -16,4 +16,5 @@ class User < ApplicationRecord
   def already_favarited?(photo)
     favarites.exists?(photo_id: photo.id)
   end
+  
 end

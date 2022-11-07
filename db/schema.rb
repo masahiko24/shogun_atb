@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_08_035119) do
+ActiveRecord::Schema.define(version: 2022_08_05_080841) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -41,6 +41,15 @@ ActiveRecord::Schema.define(version: 2022_07_08_035119) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "favarites", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "photo_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["photo_id"], name: "index_favarites_on_photo_id"
+    t.index ["user_id"], name: "index_favarites_on_user_id"
+  end
+
   create_table "photos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "nickname"
     t.string "title"
@@ -65,5 +74,7 @@ ActiveRecord::Schema.define(version: 2022_07_08_035119) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "favarites", "photos"
+  add_foreign_key "favarites", "users"
   add_foreign_key "photos", "users"
 end
