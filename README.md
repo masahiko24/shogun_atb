@@ -58,11 +58,11 @@ TOPページ
 
 データベース設計  
 ---
-[![Image from Gyazo](https://i.gyazo.com/789277290486a8b8e36c465871e3f8d7.png)](https://gyazo.com/789277290486a8b8e36c465871e3f8d7)
+[![Image from Gyazo](https://i.gyazo.com/f4c7f9de1f103de280ef9850c17683bc.jpg)](https://gyazo.com/f4c7f9de1f103de280ef9850c17683bc)
 
 画面遷移図  
 ---
-[![Image from Gyazo](https://i.gyazo.com/b87c0c99de11bfe18721467ead3f2c92.png)](https://gyazo.com/b87c0c99de11bfe18721467ead3f2c92)
+[![Image from Gyazo](https://i.gyazo.com/d304cfe28841008e200163575d061387.jpg)](https://gyazo.com/d304cfe28841008e200163575d061387)
 
 開発環境  
 ---
